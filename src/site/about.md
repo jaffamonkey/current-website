@@ -10,11 +10,9 @@ summaryImage: martin-underhill-tempertemper.jpg
 summaryImageAlt: Martin Underhill of tempertemper Web Design
 ---
 
-<!-- <picture>
-    <source srcset="/assets/img/martin-underhill-tempertemper.avif" type="image/avif" />
-    <source srcset="/assets/img/martin-underhill-tempertemper.webp" type="image/webp" />
-    <img src="/assets/img/martin-underhill-tempertemper.jpg" alt="Martin Underhill of tempertemper Web Design, holding a cup of tea and looking to his left, smiling." width="800" height="450" decoding="async" />
-</picture> -->
+<picture>
+    <img src="/assets/img/icons/favicon.png" alt="jaffamonkey" decoding="async" />
+</picture>
 
 The challenges of testing provide technical and human puzzles. I am very technically-focused, but also adept with teams.  Communication is key in testing, and that is something I have carried from contract to contract.
 
