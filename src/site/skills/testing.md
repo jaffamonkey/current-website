@@ -1,13 +1,15 @@
 ---
-title: Quality engineering
+title: Testing
 intro: |
-    Bringing quality to all aspects of a project, bringing quality assurance and testing to the SDLC, from design to production.
+    Putting ringing quality assurance and testing in heart of the pipeline, from design to production.
 order: 3
 ---
 
 If you are trying to shift left, I can help bring testing earlier and more frequently, into the design and development cycles.
 
-Startups make up the bulk of clients, and I enjoy working with that kind of vibe. But I can cater for in corporations and SME's. I am adept at delivering quality to the tightest of timescales.
+Startups make up the bulk of clients, and I enjoy working with that kind of vibe. But I cater for companies and projects of any size. 
+
+> I am adept at delivering quality to the tightest of timescales.
 
 ## How does it work?
 
