@@ -9,6 +9,10 @@ body {
   @include container;
 }
 
+.logo2 {
+  display:inline-block;
+}
+
 .cursor {
   background-color: rgb(15 23 42);
   width: 1rem;
