@@ -1,12 +1,12 @@
-    <ul>
+<ul>
     {% set nav = [
-        <!-- { title: 'Privacy policy', url: '/privacy-policy' }, -->
-        { title: 'Terms of business', url: '/terms' },
-        { title: 'Accessibility statement', url: '/accessibility-statement' }
+    { title: 'Terms of business', url: '/terms' },
+    { title: 'Accessibility statement', url: '/accessibility-statement' }
     ] %}
     {% for item in nav %}
-        <li>
-            <a href="{{ item.url | url }}" {%- if item.url == page.url | replace(".html", "") %} aria-current="page"{% endif %}>{{ item.title }}</a>
-        </li>
+    <li>
+        <a href="{{ item.url | url }}" {%- if item.url==page.url | replace(".html", "" ) %} aria-current="page" {% endif
+            %}>{{ item.title }}</a>
+    </li>
     {% endfor %}
 </ul>
