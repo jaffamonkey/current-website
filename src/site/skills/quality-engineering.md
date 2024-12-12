@@ -24,7 +24,7 @@ This won't be done in isolation - it's not the 1990's, so it's just just a matte
 - Integration of tests into CI/CD pipelines.
 
 <picture>
-    <img src="/assets/img/clients-qe.png" alt="Clients" decoding="async" />
+    <img src="/assets/img/clients-qe.png" alt="Clients" width="800" decoding="async" />
 </picture>
 
 <!-- ![Quality engineering clients](/img/clients-qe.png) -->
