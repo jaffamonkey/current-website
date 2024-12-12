@@ -24,5 +24,3 @@ This won't be done in isolation - it's not the 1990's, so it's just just a matte
 - Integration of tests into CI/CD pipelines.
 
 ![Quality engineering clients](/images/illustrations/clients-qe.png)
-
-[Book a meeting](https://calendly.com/jaffamonkeyltd/intro-call)

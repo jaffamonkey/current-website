@@ -1,11 +1,11 @@
 ---
-title: Contact Martin at tempertemper
+title: Contact me
 heading: Say hello
 intro: |
-    If you'd like me to talk at your event or you're looking for someone to help with the design and build of your website, say hello!
+    Have a no-obligation discussion about your testing needs.
 layout: default
 permalink: contact.html
-cta: true
+cta: false
 ---
 
-I'd love to hear from you on [Mastodon](https://mastodon.social/@tempertemper). Otherwise, email me at [hello@tempertemper.net](mailto:{{ site.author.email }}) I'll get back to you as soon as I can.
+Email me at [paullittlebury@gmail.com](mailto:{{ site.author.email }}), or [book a meeting](https://calendly.com/jaffamonkeyltd/intro-call)

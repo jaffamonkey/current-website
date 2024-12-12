@@ -1,7 +1,7 @@
 # Security policy for tempertemper.net (https://securitytxt.org)
 
 # Security contact address
-Contact: mailto:hello@tempertemper.net
+Contact: mailto:paullittlebury@gmail.com
 
 # Languages spoken
 Preferred-Languages: en, es
