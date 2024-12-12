@@ -37,4 +37,4 @@ Furthermore, our focus on DevOps integration is a unique aspect of our consultan
 
 Treat an audit as a startpoint, to integrating accessibility checks earlier in the development lifecycle.
 
-![Accessibility audit clients](/images/illustrations/clients.png)
+![Accessibility audit clients](/img/clients.png)
