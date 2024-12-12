@@ -1,23 +1,42 @@
 ---
 title: Accessibility audit
 intro: |
-    Accessibility is intrinsic to everything I work on, whether a design or the HTML, CSS and JavaScript a web page is built with.
+    Get an audit at any point in your project, and also get advice with pushing accessibility as part of your way of working, from design to code to production.
 order: 2
 ---
 
-When designing an interface, it's vital that the visuals cater for the broadest possible audience, ensuring:
+The purpose of an Accessibility Audit is to establish how well a website or mobile app performs in terms of access and ease of use by a wide range of potential users, including people with disabilities and the visually impaired. 
 
-- colour contrast thresholds are met
-- focus states for links, forms and buttons are obvious
-- the typefaces used won't prove problematic for visitor with dyslexia
-- text size isn't too small for some users to read
+## Accessibility Standards
+W3C specified the Web Content Accessibility Guidelines (WCAG 2.2) success criteria for Accessibility compliance. Following these guidelines will provide greater accessibility to a wider range of people with disabilities, across a range of devices (desktops, laptops, tablets and smartphones).
 
-There are hundreds of considerations that go into designing an accessible interface, and the code is no different:
+## Summary
+The audit targets a wide range of disabilities, including visual, auditory, physical, speech, cognitive, language, learning, and neurological disabilities. Professionally evaluating the website’s accessibility level is a key step in web accessibility and can be performed at any stage of a web or mobile app project.
 
-- semantic HTML must be used
-- ARIA enhancements should be used where needed
-- CSS and JavaScript should not interfere with users' experience of the page
+## Advantages
+Our services are cost-effective and efficient, ensuring that businesses of all sizes can afford and benefit from our expertise. Our in-depth knowledge and experience in Accessibility and WCAG (Web Content Accessibility Guidelines) compliance, allow us to deliver exceptional results and ensure that our clients’ digital content is accessible to all users.
 
-This means assistive technology like screen reader and speech recognition software can interpret page contents correctly, giving their users as good an experience anyone else.
+Furthermore, our focus on DevOps integration is a unique aspect of our consultancy services. This integration of accessibility practices into the development workflow gives our clients a significant advantage in creating inclusive digital experiences.
 
-Not only should we code in a way that doesn't harm the experience for users of assistive technology, but users that have activated settings like [Dark Mode](/blog/dark-mode-websites-on-macos-mojave) or [reduced motion](/blog/reducing-motion) in their operating system's preferences should be respected.
+## Key Benefits
+> Inclusivity: Integrating accessibility ensures that digital products are usable by a wider audience, including individuals with disabilities.
+
+> Legal Compliance: Adhering to accessibility standards like the Web Content Accessibility Guidelines (WCAG) helps avoid legal repercussions associated with non-compliance.
+
+>Improved User Experience: Accessible design often leads to better overall usability, benefiting all users, not just those with disabilities.
+
+> Business Advantages: A broader audience and enhanced user satisfaction can translate into increased engagement and customer loyalty.
+
+## What you will get
+- A full accessibility review and test of web or mobile app against the WCAG 2.2 AA standard.
+- Delivery of a full, prioritized accessibility report of web and/or mobile app
+- Feedback on UX as well as UI issues.
+- An accessibility statement advising on status of WCAG 2.2 AA compliance.
+- Automated accessibility test framework(s) for your design and development cycles.
+- Optional extra is devising a strategy, to aimed at integrating Accessibility checks as part of design and development cycles.
+
+Treat an audit as a startpoint, to integrating accessibility checks earlier in the development lifecycle.
+
+![Accessibility audit clients](/images/illustrations/clients.png)
+
+[Book a meeting](https://calendly.com/jaffamonkeyltd/intro-call)

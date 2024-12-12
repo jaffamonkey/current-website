@@ -1,12 +1,28 @@
 ---
 title: Quality engineering
 intro: |
-    I'm a frontend developer with a strong focus on accessible HTML and CSS and some JavaScript enhancements to improve usability.
+    Bringing quality to all aspects of a project, bringing quality assurance and testing to the SDLC, from design to production.
 order: 3
 ---
 
-I write well-structured, semantic HTML so that the sites I build are [accessible](/skills/accessibility) to all users and straightforward for other developers to maintain.
+If you are trying to shift left, I can help bring testing earlier and more frequently, into the design and development cycles.
 
-I began writing HTML in 2002, but CSS was the reason I fell in love with the web a few years later. I'm happy writing CSS from scratch, and usually use [Sass](https://sass-lang.com/) and [PostCSS](https://postcss.org/) to add some extra structure and efficiency. I'm also comfortable working with other people's CSS, or in a more structured way with CSS methodologies like [BEM](//getbem.com/) or by extending frameworks like [Bootstrap](https://getbootstrap.com/).
+Startups make up the bulk of clients, and I enjoy working with that kind of vibe. But I can cater for in corporations and SME's. I am adept at delivering quality to the tightest of timescales.
 
-While not your typical 'JavaScript Dev', I am happy working within a JavaScript framework, static site generator, or manipulating the DOM to add some usability enhancements where necessary.
+## How does it work?
+
+We can work out timescales and tasks, depending on your needs and budget. Whether you want a little help getting more automation in your pipeline, or need some general app performance checks, I can deliver results. 
+
+This won't be done in isolation - it's not the 1990's, so it's just just a matter to deliverables, it's about engagement with you and your team to ensure you have input you need.
+
+## Deliverables
+- Adaptive test strategies.
+- Applying quality checks from design through to development.
+- UI test frameworks
+- API test frameworks with service virtualization to ensure test continuity.
+- Performance tests with every build to check Accessibility, Load and Security.
+- Integration of tests into CI/CD pipelines.
+
+![Quality engineering clients](/images/illustrations/clients-qe.png)
+
+[Book a meeting](https://calendly.com/jaffamonkeyltd/intro-call)
