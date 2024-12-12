@@ -9,7 +9,7 @@ body {
   @include container;
 }
 
-cursor {
+.cursor {
   background-color: rgb(15 23 42);
   width: 1.5rem;
   height: 0.25rem;
