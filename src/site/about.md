@@ -1,6 +1,6 @@
 ---
-title: About Martin at tempertemper
-heading: About Martin
+title: About me
+heading: About me
 intro: |
     I have been working in area of testing and quality for over 25 years. Do I enjoy it? Well, my mind does like puzzles to work out!
 layout: default
