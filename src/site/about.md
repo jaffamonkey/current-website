@@ -11,7 +11,7 @@ summaryImageAlt: Martin Underhill of tempertemper Web Design
 ---
 
 <picture>
-    <img src="/assets/img/icons/favicon.png" alt="jaffamonkey" decoding="async" />
+    <img src="/assets/img/icons/icon-512.png" alt="jaffamonkey" decoding="async" />
 </picture>
 
 The challenges of testing provide technical and human puzzles. I am very technically-focused, but also adept with teams.  Communication is key in testing, and that is something I have carried from contract to contract.
