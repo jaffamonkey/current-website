@@ -37,4 +37,6 @@ Furthermore, our focus on DevOps integration is a unique aspect of our consultan
 
 Treat an audit as a startpoint, to integrating accessibility checks earlier in the development lifecycle.
 
-![Accessibility audit clients](/img/clients.png)
+<picture>
+    <img src="/assets/img/clients.png" alt="Clients" decoding="async" />
+</picture>
