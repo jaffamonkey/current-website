@@ -1,5 +1,5 @@
 ---
-title: Accessibility
+title: Accessibility audit
 intro: |
     Accessibility is intrinsic to everything I work on, whether a design or the HTML, CSS and JavaScript a web page is built with.
 order: 2
