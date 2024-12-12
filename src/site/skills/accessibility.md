@@ -1,9 +1,11 @@
 ---
-title: Accessibility audit
+title: Accessibility
 intro: |
     Get an audit at any point in your project, and also get advice with pushing accessibility as part of your way of working, from design to code to production.
 order: 2
 ---
+
+## Accessibility audit
 
 The purpose of an Accessibility Audit is to establish how well a website or mobile app performs in terms of access and ease of use by a wide range of potential users, including people with disabilities and the visually impaired. 
 
