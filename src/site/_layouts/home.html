@@ -3,6 +3,7 @@ layout: base.html
 ---
 
 <article>
+    <!-- <img src="/assets/img/icons/apple-touch-icon.png" alt="jaffamonkey" width="64" height="64" decoding="async" /> -->
     <h1>
         {%- if heading %}
             {{- heading | smart | safe }}
@@ -11,7 +12,6 @@ layout: base.html
         {%- else %}
             {{- title | smart | safe }}
         {%- endif %}
-            <!-- <div style="display:inline-block;"><img src="/assets/img/icons/apple-touch-icon.png" style="display:inline-block;" alt="jaffamonkey" width="64" height="64" decoding="async" /></div> -->
     </h1>
     {%- if intro and not hideIntro %}
         {{- intro | markdown | safe }}
