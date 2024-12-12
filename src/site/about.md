@@ -6,12 +6,12 @@ intro: |
 layout: default
 permalink: about.html
 cta: true
-summaryImage: martin-underhill-tempertemper.jpg
-summaryImageAlt: Martin Underhill of tempertemper Web Design
+summaryImage: apple-touch-icon.png
+summaryImageAlt: jaffamonkey
 ---
 
 <picture>
-    <img src="/assets/img/icons/apple-touch-icon.png" alt="jaffamonkey" width="128px" decoding="async" />
+    <img src="/assets/img/icons/apple-touch-icon.png" alt="jaffamonkey" width="128" decoding="async" />
 </picture>
 
 The challenges of testing provide technical and human puzzles. I am very technically-focused, but also adept with teams.  Communication is key in testing, and that is something I have carried from contract to contract.
