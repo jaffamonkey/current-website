@@ -34,12 +34,12 @@ body {
   }
 }
 
-h1::after {
-  margin: 15px;
-  content: url('/assets/img/icons/apple-touch-icon.png');
-}
+// h1::after {
+//   margin: 15px;
+//   content: url('/assets/img/icons/heading-logo.png');
+// }
 
 h3::before {
-  margin: 10px;
-  content: url('/assets/img/icons/apple-touch-icon.png');
+  vertical-align: middle;
+  content: url('/assets/img/icons/heading-logo.png');
 }
