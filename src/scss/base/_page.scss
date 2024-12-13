@@ -10,7 +10,7 @@ body {
 }
 
 .logo2 {
-  display: inline-block;
+  display:inline-block;
   margin-right: 0;
 }
 
@@ -19,22 +19,18 @@ body {
   width: 1rem;
   height: 0.30rem;
   animation: blink 1s infinite;
-  display: inline-block;
+  display:inline-block;
 }
 
 @keyframes blink {
-
-  0%,
-  100% {
-    background-color: transparent;
+  0%, 100% {
+      background-color: transparent;
   }
-
   50% {
-    background-color: rgb(15 23 42);
+      background-color: rgb(15 23 42);
   }
 }
 
 h1::after {
-  margin: 10px;
-  content: url('/assets/img/icons/heading-logo.png');
+  content: url('/assets/img/icons/apple-touch-icon.png');
 }
