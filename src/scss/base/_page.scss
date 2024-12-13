@@ -11,6 +11,7 @@ body {
 
 .logo2 {
   display:inline-block;
+  margin-right: 0;
 }
 
 .cursor {
@@ -28,4 +29,8 @@ body {
   50% {
       background-color: rgb(15 23 42);
   }
+}
+
+h3::after {
+  content: url('/assets/img/icons/apple-touch-icon.png');
 }
