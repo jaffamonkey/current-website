@@ -32,5 +32,6 @@ body {
 }
 
 h1::after {
-  content: url('/assets/img/icons/apple-touch-icon.png');
+  margin: 10px;
+  content: url('/assets/img/icons/heading-logo.png');
 }
