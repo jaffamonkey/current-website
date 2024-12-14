@@ -92,6 +92,8 @@
 @mixin overspill {
   margin-left: calc(-1em);
   margin-right: calc(-1em);
+  margin-bottom: calc(2em);
+  margin-top: calc(2em);
 }
 
 @mixin overspill-reset {

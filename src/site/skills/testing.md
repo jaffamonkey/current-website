@@ -5,13 +5,11 @@ intro: |
 order: 3
 ---
 
-## Test everywhere
-
 <picture>
     <img src="/assets/img/qe.png" alt="EvaluAgent product pattern library intro page, showing a folder system containing the patterns and documenting things such as pattern status labels" width="800" loading="lazy" decoding="async" />
 </picture>
 
-
+## Test everywhere
 
 If you are trying to `shift left`, I can help bring testing earlier and more frequently, into the design and development cycles.
 

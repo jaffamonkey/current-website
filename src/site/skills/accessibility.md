@@ -5,12 +5,11 @@ intro: |
 order: 2
 ---
 
-## Accessibility audit
-
 <picture>
     <img src="/assets/img/accessibility.png" alt="EvaluAgent product pattern library intro page, showing a folder system containing the patterns and documenting things such as pattern status labels" width="800" loading="lazy" decoding="async" />
 </picture>
 
+## Accessibility audit
 
 The purpose of an Accessibility Audit is to establish how well a website or mobile app performs in terms of access and ease of use by a wide range of potential users, including people with disabilities and the visually impaired. 
 
