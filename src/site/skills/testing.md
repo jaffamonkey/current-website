@@ -6,7 +6,7 @@ order: 3
 ---
 
 <picture>
-    <img src="/assets/img/quality-engineering.jpg" alt="EvaluAgent product pattern library intro page, showing a folder system containing the patterns and documenting things such as pattern status labels" width="800" loading="lazy" decoding="async" />
+    <img src="/assets/img/qe.png" alt="EvaluAgent product pattern library intro page, showing a folder system containing the patterns and documenting things such as pattern status labels" width="800" loading="lazy" decoding="async" />
 </picture>
 
 If you are trying to shift left, I can help bring testing earlier and more frequently, into the design and development cycles.
