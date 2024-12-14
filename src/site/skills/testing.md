@@ -12,6 +12,7 @@ order: 3
 </picture>
 
 
+
 If you are trying to `shift left`, I can help bring testing earlier and more frequently, into the design and development cycles.
 
 Startups make up the bulk of clients, and I enjoy working with that kind of vibe. But I cater for companies and projects of any size. 
