@@ -39,6 +39,7 @@ This won't be done in isolation - it's not the 1990's; the way of working is abo
         <tr>
             <td>
                 <ul>
+                    <li>Acorn Compliance</li>
                     <li>bet365</li>
                     <li>Ceta Insurance Ltd</li>
                     <li>CGI</li>
@@ -47,7 +48,7 @@ This won't be done in isolation - it's not the 1990's; the way of working is abo
                     <li>Tele2</li>
                     <li>i2N</li>
                     <li>Wowcher</li>
-                    <li>TNT (Netherlands)</li>
+                    <li>TNT</li>
                     <li>Hiveworks</li>
                     <li>KPMG</li>
                     <li>Digital Jigsaw</li>
@@ -82,12 +83,12 @@ This won't be done in isolation - it's not the 1990's; the way of working is abo
                     <li>Rufus Leonard</li>
                     <li>Misys</li>
                     <li>Reuters</li>
-                    <li>GoudenGids (Netherlands)</li>
+                    <li>GoudenGids</li>
                     <li>Hess</li>
                     <li>Citibank</li>
                     <li>Perot Systems</li>
-                    <li>Unisys (UK)</li>
-                    <li>Unisys (Netherlands)</li>
+                    <li>Unisys</li>
+                    <li>Sema</li>
                 </ul>
             </td>
         </tr>
