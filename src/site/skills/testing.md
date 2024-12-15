@@ -40,6 +40,7 @@ This won't be done in isolation - it's not the 1990's; the way of working is abo
             <tr>
                 <th>Clients 1997 - 2008</th>
                 <th>Clients 2009 - 2024</th>
+                <th>Clients 2010 - 2024</th>
             </tr>
             <tr>
                 <td>bet365
@@ -63,7 +64,7 @@ Pearson
 Incisive Media
 Skills for Work
 Elvis Communications</td>
-                <td>BSi
+BSi
 EMap
 BOC Gases
 Walt Disney Internet Group
