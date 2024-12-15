@@ -10,11 +10,9 @@ summaryImage: apple-touch-icon.png
 summaryImageAlt: jaffamonkey
 ---
 
-The challenges of testing provide technical and human puzzles. I am very technically-focused, but also adept with teams.  Communication is key in testing, and that is something I have carried from contract to contract.
+The challenges of testing provide technical and human puzzles. I am very technically-focused, but also adept with teams. I started out in the tail of of the 1990's, when Waterfall was still common and testing was judged by the weight of arch-lever file reports (only half-joking).  With my Agile project in 2002, I found more inspiration in testing - not least from opensource world. As technical demands on testers grew in the 00's, I grew with them. 
 
-I started out in the tail of of the 1990's, when Waterfall was still common and testing was judged by the weight of arch-lever files (only half-joking).  When I jumped on Agile train in 2002, I found more inspiration in testing - not least from opensource world. As technical demands on testers grew in the 00's, I grew with them. 
-
-> I learnt early on to take a lean approach to testing - including strategy, reporting and test frameworks.
+> As my site demonstrates, I am a minimalist - in life, and in work I learnt early on to take a lean approach to testing, to ensure minimal time-wasting. From working with many startups, I kept on improving on this heavily risk-based approach.
 
  From corporations trying to change at a faster pace, to startups looking for a rapid and flexible approach to testing,  I have learnt that testing can be improved and have positive effect on the rest of the project, whatever the challenges.
 
