@@ -34,59 +34,66 @@ This won't be done in isolation - it's not the 1990's; the way of working is abo
 
 ## Clients
 
-<!-- <section class="table-container" tabindex="0" aria-labelledby="caption">
+<section class="table-container" tabindex="0" aria-labelledby="caption">
     <table>
         <caption id="caption">Client list</caption>
-            <tr>
-                <th>Clients 1997 - 2008</th>
-                <th>Clients 2009 - 2024</th>
-                <th>Clients 2010 - 2024</th>
-            </tr>
-            <tr>
-                <td>bet365
-Ceta Insurance Ltd 
-CGI
-DocComs
-Transform UK
-Tele2
-i2N
-Wowcher
-TNT (Netherlands)
-Hiveworks
-KPMG
-Digital Jigsaw
-Digitas
-Sohnar
-Fortune Cookie
-TixMe
-Spotless Interactive
-Pearson
-Incisive Media
-Skills for Work
-Elvis Communications</td>
-BSi
-EMap
-BOC Gases
-Walt Disney Internet Group
-Nike
-Seven
-BBC Technology
-Telefónica UK
-Avison Young
-Multex Investor
-Sony Computer Entertainment Europe
-Rufus Leonard
-Misys
-Reuters
-GoudenGids (Netherlands)
-Hess
-Citibank
-Perot Systems
-Unisys
-</td>
-            </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>bet365</li>
+                    <li>Ceta Insurance Ltd</li>
+                    <li>CGI</li>
+                    <li>DocComs</li>
+                    <li>Transform UK</li>
+                    <li>Tele2</li>
+                    <li>i2N</li>
+                    <li>Wowcher</li>
+                    <li>TNT (Netherlands)</li>
+                    <li>Hiveworks</li>
+                    <li>KPMG</li>
+                    <li>Digital Jigsaw</li>
+                    <li>Digitas</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Sohnar</li>
+                    <li>Fortune Cookie</li>
+                    <li>TixMe</li>
+                    <li>Spotless Interactive</li>
+                    <li>Pearson</li>
+                    <li>Incisive Media</li>
+                    <li>Skills for Work</li>
+                    <li>Elvis Communications</li>
+                    <li>BSi</li>
+                    <li>EMap</li>
+                    <li>BOC Gases</li>
+                    <li>Walt Disney Internet Group</li>
+                    <li>Nike</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Seven</li>
+                    <li>BBC Technology</li>
+                    <li>Telefónica UK</li>
+                    <li>Avison Young</li>
+                    <li>Multex Investor</li>
+                    <li>Sony Computer Entertainment Europe</li>
+                    <li>Rufus Leonard</li>
+                    <li>Misys</li>
+                    <li>Reuters</li>
+                    <li>GoudenGids (Netherlands)</li>
+                    <li>Hess</li>
+                    <li>Citibank</li>
+                    <li>Perot Systems</li>
+                    <li>Unisys (UK)</li>
+                    <li>Unisys (Netherlands)</li>
+                </ul>
+            </td>
+        </tr>
     </table>
-</section> -->
+</section>
 
 <picture>
     <img src="/assets/img/clients-qe.png" alt="Clients" width="650" decoding="async" />
