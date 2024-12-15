@@ -35,7 +35,14 @@ W3C specified the Web Content Accessibility Guidelines (WCAG 2.2) success criter
 
 Treat an audit as a startpoint, to integrating accessibility checks earlier in the development lifecycle.
 
+## Accessibility audit clients
 
-<picture>
-    <img src="/assets/img/clients.png" alt="Clients" width="650" decoding="async" />
-</picture>
+* Adora
+* Coloplast
+* DigiSafe
+* HealthwaveHub
+* IMS Maxims
+* MediaLogix
+* ZoomDoc
+* TympaHealth
+* Infervision
