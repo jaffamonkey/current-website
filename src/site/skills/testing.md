@@ -36,7 +36,6 @@ This won't be done in isolation - it's not the 1990's; the way of working is abo
 
 <section class="table-container" tabindex="0" aria-labelledby="caption">
     <table>
-        <caption id="caption">Client list</caption>
         <tr>
             <td>
                 <ul>
@@ -70,11 +69,11 @@ This won't be done in isolation - it's not the 1990's; the way of working is abo
                     <li>BOC Gases</li>
                     <li>Walt Disney Internet Group</li>
                     <li>Nike</li>
+                    <li>Seven</li>
                 </ul>
             </td>
             <td>
                 <ul>
-                    <li>Seven</li>
                     <li>BBC Technology</li>
                     <li>Telefónica UK</li>
                     <li>Avison Young</li>
