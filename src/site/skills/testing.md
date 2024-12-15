@@ -24,12 +24,68 @@ We can work out timescales and tasks, depending on your needs and budget. Whethe
 This won't be done in isolation - it's not the 1990's; the way of working is about engagement with you and your team, to ensure you have input you need.
 
 ## Deliverables
+
 - Adaptive test strategies.
 - Applying quality checks from design through to development.
 - UI test frameworks
 - API test frameworks with service virtualization to ensure test continuity.
 - Performance tests with every build to check Accessibility, Load and Security.
 - Integration of tests into CI/CD pipelines.
+
+## Clients
+
+<section class="table-container" tabindex="0" aria-labelledby="caption">
+    <table>
+        <caption id="caption">Client list</caption>
+            <tr>
+                <th>Clients 1997 - 2008</th>
+                <th>Clients 2009 - 2024</th>
+            </tr>
+            <tr>
+                <td>bet365
+Ceta Insurance Ltd 
+CGI
+DocComs
+Transform UK
+Tele2
+i2N
+Wowcher
+TNT (Netherlands)
+Hiveworks
+KPMG
+Digital Jigsaw
+Digitas
+Sohnar
+Fortune Cookie
+TixMe
+Spotless Interactive
+Pearson
+Incisive Media
+Skills for Work
+Elvis Communications</td>
+                <td>BSi
+EMap
+BOC Gases
+Walt Disney Internet Group
+Nike
+Seven
+BBC Technology
+Telefónica UK
+Avison Young
+Multex Investor
+Sony Computer Entertainment Europe
+Rufus Leonard
+Misys
+Reuters
+GoudenGids (Netherlands)
+Hess
+Citibank
+Perot Systems
+Unisys
+</td>
+            </tr>
+    </table>
+</section>
 
 <picture>
     <img src="/assets/img/clients-qe.png" alt="Clients" width="650" decoding="async" />

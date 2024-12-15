@@ -88,3 +88,19 @@ tr {
     }
   }
 }
+
+.table-container {
+  overflow: auto;
+}
+
+.table-wrapper:focus {
+  outline: 3px solid rebeccapurple;
+}
+
+.table-wrapper:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.table-wrapper:focus-visible {
+  outline: 3px solid rebeccapurple;
+}
