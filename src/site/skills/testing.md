@@ -41,7 +41,7 @@ This won't be done in isolation - it's not the 1990's; the way of working is abo
                 <ul>
                     <li>Acorn Compliance</li>
                     <li>bet365</li>
-                    <li>Ceta Insurance Ltd</li>
+                    <li>Ceta Insurance</li>
                     <li>CGI</li>
                     <li>DocComs</li>
                     <li>Transform UK</li>
@@ -64,22 +64,22 @@ This won't be done in isolation - it's not the 1990's; the way of working is abo
                     <li>Pearson</li>
                     <li>Incisive Media</li>
                     <li>Skills for Work</li>
-                    <li>Elvis Communications</li>
+                    <li>Elvis</li>
                     <li>BSi</li>
                     <li>EMap</li>
                     <li>BOC Gases</li>
-                    <li>Walt Disney Internet Group</li>
+                    <li>Disney</li>
                     <li>Nike</li>
                     <li>Seven</li>
                 </ul>
             </td>
             <td>
                 <ul>
-                    <li>BBC Technology</li>
+                    <li>BBC</li>
                     <li>Telefónica UK</li>
                     <li>Avison Young</li>
                     <li>Multex Investor</li>
-                    <li>Sony Computer Entertainment Europe</li>
+                    <li>Sony (SCEE)</li>
                     <li>Rufus Leonard</li>
                     <li>Misys</li>
                     <li>Reuters</li>
@@ -95,6 +95,6 @@ This won't be done in isolation - it's not the 1990's; the way of working is abo
     </table>
 </section>
 
-<picture>
+<!-- <picture>
     <img src="/assets/img/clients-qe.png" alt="Clients" width="650" decoding="async" />
-</picture>
+</picture> -->
