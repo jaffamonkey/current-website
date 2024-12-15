@@ -78,7 +78,7 @@ This won't be done in isolation - it's not the 1990's; the way of working is abo
                     <li>BBC</li>
                     <li>Telefónica UK</li>
                     <li>Avison Young</li>
-                    <li>Multex Investor</li>
+                    <li>Multex</li>
                     <li>Sony (SCEE)</li>
                     <li>Rufus Leonard</li>
                     <li>Misys</li>
