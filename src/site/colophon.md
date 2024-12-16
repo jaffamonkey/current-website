@@ -37,3 +37,8 @@ I use a variety of tools to keep the site accessible, including:
 <picture>
     <img src="/assets/img/pa11y2.png" alt="Pa11y dashboard page report view" width="800" loading="lazy" decoding="async" />
 </picture>
+
+### Speedlify
+<picture>
+    <img src="/assets/img/speedlify.png" alt="Speedlify dashboard" width="800" loading="lazy" decoding="async" />
+</picture>
