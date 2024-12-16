@@ -34,7 +34,7 @@ This won't be done in isolation - it's not the 1990's; the way of working is abo
 
 ## Clients
 
-<section class="table-container" tabindex="0" aria-labelledby="caption">
+<!-- <section class="table-container" tabindex="0" aria-labelledby="caption">
     <table>
         <tr>
             <td>
@@ -93,8 +93,8 @@ This won't be done in isolation - it's not the 1990's; the way of working is abo
             </td>
         </tr>
     </table>
-</section>
+</section> -->
 
-<!-- <picture>
-    <img src="/assets/img/clients-qe.png" alt="Clients" width="650" decoding="async" />
-</picture> -->
+<picture>
+    <img src="/assets/img/clients2.png" alt="Clients" width="650" decoding="async" />
+</picture>
