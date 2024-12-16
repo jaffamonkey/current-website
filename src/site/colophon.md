@@ -8,9 +8,9 @@ permalink: colophon.html
 cta: true
 ---
 
-This website was put together using the TemperTemper (an [Eleventy] theme). 
+This website was put together using the TemperTemper (an [Eleventy](https://www.11ty.dev/) theme). 
 
-The build itself is taken care of by npm scripts and it's all [hosted on Netlify](/blog/moving-to-netlify).
+The build itself is taken care of by npm scripts and it's all hosted on Netlify.
 
 ## Styling
 
