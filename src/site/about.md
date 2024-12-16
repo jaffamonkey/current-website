@@ -10,7 +10,11 @@ summaryImage: apple-touch-icon.png
 summaryImageAlt: jaffamonkey
 ---
 
-The challenges of testing provide technical and human puzzles. I am very technically-focused, but also adept with teams. I started out in the tail of of the 1990's, when Waterfall was still common and testing was judged by the weight of arch-lever file reports (only half-joking).  With my Agile project in 2002, I found more inspiration in testing - not least from opensource world. As technical demands on testers grew in the 00's, I grew with them. 
+I started out in the tail of of the 1990's, when Waterfall was still common and testing was judged by the weight of arch-lever file reports (only half-joking).  
+
+With my first Agile project in 2002, I found more inspiration in testing - not least from opensource world. As technical demands on testers grew in the 00's, I grew with them. 
+
+The challenges of testing provide technical and human puzzles, which left me both technically-adept with soft skills built on the experience from working with over 100 teams
 
 > As my site demonstrates, I am a minimalist - in life, and in work I learnt early on to take a lean approach to testing, to ensure minimal time-wasting. From working with many startups, I kept on improving on this heavily risk-based approach.
 
