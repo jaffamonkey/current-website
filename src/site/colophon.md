@@ -28,4 +28,9 @@ I use a variety of tools to keep the site accessible, including:
 * [Lighthouse scores (Speedlify service](https://elegant-biscotti-25e1e9.netlify.app/jaffamonkey-website) 
 * Pa11y Dashboard.
 
-
+<picture>
+    <img src="/assets/img/pa11y1.png" alt="Pa11y dashboard" width="800" loading="lazy" decoding="async" />
+</picture>
+<picture>
+    <img src="/assets/img/pa11y1.png" alt="Pa11y dashboard page report view" width="800" loading="lazy" decoding="async" />
+</picture>
