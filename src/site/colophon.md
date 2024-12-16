@@ -25,23 +25,22 @@ There is only a tiny amount of JavaScript on this website; used to enhance some 
 
 I use a variety of tools to keep the site accessible, including:
 
-* [Lighthouse scores](https://elegant-biscotti-25e1e9.netlify.app/jaffamonkey-website) from Speedlify's SaaS service.
-* [Pa11y Dashboard](https://github.com/pa11y/pa11y-dashboard) which is a monitoring too.,
+### Lighthouse scores
 
-#### Pa11y dashboard
+[Lighthouse scores](https://elegant-biscotti-25e1e9.netlify.app/jaffamonkey-website) from Speedlify's SaaS service
+
+<picture>
+    <img src="/assets/img/speedlify.png" alt="Speedlify dashboard" width="800" loading="lazy" decoding="async" />
+</picture>
+
+### Pa11y Dashboard
+
+[Pa11y Dashboard](https://github.com/pa11y/pa11y-dashboard) which is a monitoring tool.
 
 <picture>
     <img src="/assets/img/pa11y1.png" alt="Pa11y dashboard" width="800" loading="lazy" decoding="async" />
 </picture>
 
-#### Pa11y page report
-
 <picture>
     <img src="/assets/img/pa11y2.png" alt="Pa11y dashboard page report view" width="800" loading="lazy" decoding="async" />
-</picture>
-
-#### Speedlify
-
-<picture>
-    <img src="/assets/img/speedlify.png" alt="Speedlify dashboard" width="800" loading="lazy" decoding="async" />
 </picture>
