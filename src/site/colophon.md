@@ -32,7 +32,7 @@ I use a variety of tools to keep the site accessible, including:
 </picture>
 
 
-**[[Pa11y Dashboard](https://github.com/pa11y/pa11y-dashboard) which is a code monitoring tool.**
+**[Pa11y Dashboard](https://github.com/pa11y/pa11y-dashboard) which is a code monitoring tool.**
 
 <picture>
     <img src="/assets/img/pa11y1.png" alt="Pa11y dashboard" width="800" loading="lazy" decoding="async" />
