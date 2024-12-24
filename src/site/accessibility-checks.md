@@ -4,7 +4,7 @@ intro: |
     This website was build using Eleventy, Gulp, SCSS and the TemperTemper theme.
 hideIntro: true
 layout: default
-permalink: site-accessibility-checks.html
+permalink: accessibility-checks.html
 cta: true
 ---
 

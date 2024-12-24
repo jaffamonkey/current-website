@@ -1259,8 +1259,8 @@
   force = true
 
 [[redirects]]
-  from = "/about/colophon"
-  to = "/colophon"
+  from = "/about/accessibility-checks"
+  to = "/accessibility-checks"
   status = 301
   force = true
 
