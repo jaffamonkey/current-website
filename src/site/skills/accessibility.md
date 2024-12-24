@@ -4,10 +4,9 @@ intro: |
     Get an audit at any point in your project, and also get advice with pushing accessibility as part of your way of working, from design to code to production.
 order: 2
 ---
-
-<picture>
+<!-- <picture>
     <img src="/assets/img/accessibility.png" alt="EvaluAgent product pattern library intro page, showing a folder system containing the patterns and documenting things such as pattern status labels" width="800" loading="lazy" decoding="async" />
-</picture>
+</picture> -->
 
 ## Accessibility audit
 

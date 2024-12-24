@@ -4,10 +4,10 @@ intro: |
     Putting ringing quality assurance and testing in heart of the pipeline, from design to production.
 order: 3
 ---
-
+<!-- 
 <picture>
     <img src="/assets/img/qe.png" alt="EvaluAgent product pattern library intro page, showing a folder system containing the patterns and documenting things such as pattern status labels" width="800" loading="lazy" decoding="async" />
-</picture>
+</picture> -->
 
 ## Test everywhere
 
