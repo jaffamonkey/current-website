@@ -8,22 +8,25 @@ permalink: accessibility-checks.html
 cta: true
 ---
 
-I use a variety of tools to keep the site accessible, including:
+## Lighthouse scores
 
-**[Lighthouse scores](https://elegant-biscotti-25e1e9.netlify.app/jaffamonkey-website), a self-hosted Lighthouse service from Speedlify.**
+[Lighthouse scores](https://elegant-biscotti-25e1e9.netlify.app/jaffamonkey-website), a self-hosted Lighthouse service from Speedlify.
 
 <picture>
     <img src="/assets/img/speedlify.png" alt="Speedlify dashboard" width="800" loading="lazy" decoding="async" />
 </picture>
 
-**[Guidepup](https://www.guidepup.dev/) tools to test screenreader, and return granular screenreader output.**
+## Guidepup
+
+[Guidepup](https://www.guidepup.dev/) tools to test screenreader, and return granular screenreader output.
 
 <picture>
     <img src="/assets/img/guidepup.png" alt="Guidepup screenreader report" width="800" loading="lazy" decoding="async" />
 </picture>
 
+## Pa11y Dashboard
 
-**[Pa11y Dashboard](https://github.com/pa11y/pa11y-dashboard) which is a code monitoring tool.**
+[Pa11y Dashboard](https://github.com/pa11y/pa11y-dashboard) which is a code monitoring tool.
 
 <picture>
     <img src="/assets/img/pa11y1.png" alt="Pa11y dashboard" width="800" loading="lazy" decoding="async" />
@@ -33,8 +36,9 @@ I use a variety of tools to keep the site accessible, including:
     <img src="/assets/img/pa11y2.png" alt="Pa11y dashboard page report view" width="800" loading="lazy" decoding="async" />
 </picture>
 
+## Pa11y CI
 
-**[Pa11y CI], a deOps friendly version of the core pa11y tool.**
+[Pa11y CI](https://github.com/pa11y/pa11y-ci), a deOps friendly version of the core pa11y tool.
 _Note: Both `Pa11y Dashboard` and `Pa11y CI` support scripting to get pass login barriers._
 
 <picture>
