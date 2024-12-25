@@ -16,14 +16,6 @@ cta: true
     <img src="/assets/img/speedlify.png" alt="Speedlify dashboard" width="800" loading="lazy" decoding="async" />
 </picture>
 
-## Guidepup
-
-[Guidepup](https://www.guidepup.dev/) tools to test screenreader, and return granular screenreader output.
-
-<picture>
-    <img src="/assets/img/guidepup.png" alt="Guidepup screenreader report" width="800" loading="lazy" decoding="async" />
-</picture>
-
 ## Pa11y Dashboard
 
 [Pa11y Dashboard](https://github.com/pa11y/pa11y-dashboard) which is a code monitoring tool.
@@ -43,4 +35,12 @@ _Note: Both `Pa11y Dashboard` and `Pa11y CI` support scripting to get pass login
 
 <picture>
     <img src="/assets/img/pa11y-ci.png" alt="Pa11y CI report" width="800" loading="lazy" decoding="async" />
+</picture>
+
+## Guidepup
+
+[Guidepup](https://www.guidepup.dev/) tools to test screenreader, and return granular screenreader output.
+
+<picture>
+    <img src="/assets/img/guidepup.png" alt="Guidepup screenreader report" width="800" loading="lazy" decoding="async" />
 </picture>
