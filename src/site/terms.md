@@ -10,15 +10,11 @@ permalink: terms.html
 
 ## General approach
 
-In recent years, I've been focusing on shorter assignments - hands-on testing or helping implement testing strategy. A more recent specialty is Accessibility audits. 
-
-## Testing
-
-I care about the testing and this means I often question or challenge ideas clients bring to me (diplomatically, of course; I'm far from the argumentative type!). Having said that, please don't be shy with *your* ideas: you know your business better than anyone!
+In recent years, I've been focusing on shorter assignments - hands-on testing or helping implement testing strategy. A more recent specialty is Accessibility audits. I care about the testing and this means I often question or challenge ideas clients bring to me (diplomatically, of course; I'm far from the argumentative type!). Having said that, please don't be shy with *your* ideas: you know your business better than anyone!
 
 ## Ways of working
 
-I have worked with many teams on projects of all sizes. What I have learnt is fundamentally, a team is a group of people aiming towards the same (or at least similar) goal. This means the real challenge is how a team operates, especially when you are shoe-horning a new person in, on temporary basis. Be assured, I have experience of how to approach. Whilst mhy social kills may be lacking, in context of work, I delight in being able to communicate effectively with many people.
+I have worked with many teams on projects of all sizes. What I have learnt is fundamentally, a team is a group of people aiming towards the same (or at least similar) goal. This means the real challenge is how a team operates, especially when you are shoe-horning a new person in, on temporary basis. Be assured, I have experience of how to approach. Whilst mhy social kills may be lacking, in context of work, I value my ability to communicate effectively with many different types of people.
 
 ## My location
 
