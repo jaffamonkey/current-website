@@ -39,7 +39,7 @@ Working remotely is not just about location; it's about being timezone agnostic 
 
 My fee depends on the type of work you'd like me to do and length of contract. When outlining what your project is, please give a clear expectation of **what** you would like me to do, **when** you'd like it to be done by, and the **budget** you have available.
 
-As a rough, I charge £500 per day + VAT. 
+As a rough guide, my standard charge is £500 per day + VAT for hands-on testing work
 
 ## Ongoing retainers
 
