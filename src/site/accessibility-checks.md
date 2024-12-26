@@ -44,3 +44,12 @@ _Note: Both `Pa11y Dashboard` and `Pa11y CI` support scripting to get pass login
 <picture>
     <img src="/assets/img/guidepup.png" alt="Guidepup screenreader report" width="800" loading="lazy" decoding="async" />
 </picture>
+
+## Web Rotor
+
+I use the Web Rotor feature that is available with all screenreaders, which represents a page using categorised lists. It provides an easier way to navigate a web page with VoiceOver using lists of headings, links, forms and other items on a web page.
+
+{% set youtubeVideoTitle = "Web Rotor" %}
+{% set youtubeVideoID = "UeSAFQnI53o" %}
+{% include "youtube-embed.html" %}
+
