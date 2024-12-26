@@ -41,15 +41,15 @@ My fee depends on the type of work you'd like me to do and length of contract. W
 
 As a rough, I charge £500 per day + VAT. 
 
-### Ongoing retainers
+## Ongoing retainers
 
 I can work with clients on a regular basis, to assist during times when more test expertise and experience is required.
 
-### Expenses
+## Expenses
 
 This is a rarity, but any travel costs would come under expenses.
 
-### Negotiations
+## Negotiations
 
 I am happy to negotiate, to a degree. For example, if your website or mobile app is particularly straightforward, then a lower price could be agreed. If you simply haven't the budget for your needs, I can still work out a plan to maximise testing time to the fullest. For example, I can reduce time necessary by reducing effort on reporting, which is a time-consuming task, and keep it leaner.
 
