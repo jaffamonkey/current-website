@@ -29,7 +29,8 @@ W3C specified the Web Content Accessibility Guidelines (WCAG 2.2) success criter
 - Delivery of a full, prioritized accessibility report of web and/or mobile app
 - Feedback on UX as well as UI issues.
 - An accessibility statement advising on status of WCAG 2.2 AA compliance.
-- Automated accessibility test framework(s) for your design and development cycles.
+- Automated accessibility test framework(s) for your design and development cycles. 
+  _(some of the tools used are described on page about [checks done on this website](https://jaffamonkey.com/accessibility-checks))_
 - Optional extra is devising a strategy, to aimed at integrating Accessibility checks as part of design and development cycles.
 
 Treat an audit as a startpoint, to integrating accessibility checks earlier in the development lifecycle.
