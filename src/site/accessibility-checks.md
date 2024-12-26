@@ -37,6 +37,15 @@ _Note: Both `Pa11y Dashboard` and `Pa11y CI` support scripting to get pass login
     <img src="/assets/img/pa11y-ci.png" alt="Pa11y CI report" width="800" loading="lazy" decoding="async" />
 </picture>
 
+## aXe Scan
+
+I like to use different tools, which sometimes highlight issues other tool may not find. Between the [a11y](https://www.a11yproject.com/) and [aXe](https://www.deque.com/axe/) tools, you can get a good coverage on the automation side of accessibility. Here, it's picked up on work I need to do to improve the screenreader output, by adding a caption to the video.
+
+<picture>
+    <img src="/assets/img/axe-scan.png" alt="Axe scan CSV report" width="800" loading="lazy" decoding="async" />
+</picture>
+
+
 ## Guidepup
 
 [Guidepup](https://www.guidepup.dev/) tools to test screenreader, and return granular screenreader output.
