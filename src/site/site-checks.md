@@ -1,10 +1,10 @@
 ---
-title: Accessibility checks
+title: Site checks
 intro: |
     This website was build using Eleventy, Gulp, SCSS and the TemperTemper theme.
 hideIntro: true
 layout: default
-permalink: accessibility-checks.html
+permalink: site-checks.html
 cta: true
 ---
 
