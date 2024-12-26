@@ -10,7 +10,7 @@ permalink: terms.html
 
 ## General approach
 
-In recent years, I've been focusing on shorter testing assignments - sometimes hands-on, sometimes as a coach/guide. A more recent specialty is Accessibility audits. 
+In recent years, I've been focusing on shorter assignments - hands-on testing or helping implement testing strategy. A more recent specialty is Accessibility audits. 
 
 ## Testing
 
