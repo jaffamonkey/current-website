@@ -8,12 +8,12 @@ permalink: site-checks.html
 cta: true
 ---
 
-## Lighthouse scores
+## Lighthouse
 
-[Lighthouse scores](https://elegant-biscotti-25e1e9.netlify.app/jaffamonkey-website), a self-hosted Lighthouse service from Speedlify.
+I use the Chrome dev tool [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview), for performance checks.
 
 <picture>
-    <img src="/assets/img/speedlify.png" alt="Speedlify dashboard" width="800" loading="lazy" decoding="async" />
+    <img src="/assets/img/lighthouse.png" alt="Lighthouse report" width="800" loading="lazy" decoding="async" />
 </picture>
 
 ## Pa11y Dashboard
