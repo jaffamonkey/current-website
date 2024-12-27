@@ -1,5 +1,5 @@
 ---
-title: Efficient, simple and usable GOV.UK dashboard pages
+title: Landmark BDD project for Civil Service
 intro: |
     In the service I've worked on for the last two years, a lot of improvements have been made. One huge win was the dashboard page.
 date: 2020-04-08

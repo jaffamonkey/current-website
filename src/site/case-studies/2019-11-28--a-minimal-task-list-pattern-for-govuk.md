@@ -1,5 +1,5 @@
 ---
-title: A minimal task list pattern for GOV.UK
+title: Smartphone beginnings
 intro: |
     One job I'm particularly proud of is the improved GOV.UK task list pattern. My stripped-back design is now part of HMRC's Design Patterns library.
 date: 2019-11-28

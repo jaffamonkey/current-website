@@ -1,5 +1,5 @@
 ---
-title: Designing a cohesive suite of applications
+title: Joining the Agile wave
 intro: |
     When I redesigned EvaluAgent's suite of apps consistency of the UI was key, but there had to be a way of discerning one app from another at a glance.
 date: 2018-06-01
