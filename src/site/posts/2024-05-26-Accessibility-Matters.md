@@ -5,6 +5,7 @@ intro: |
 date: 2024-05-11
 tags:
     - Accessibility
+featured: true
 ---
 
 Accessibility in UX Design extends beyond compliance with legal standards. It’s about empathetically and proactively designing apps that cater to the diverse needs of users with disabilities (including neurodivergence). That way, everyone can fully use these apps, regardless of their abilities. Empathy should be the cornerstone of human-centred design
