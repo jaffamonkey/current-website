@@ -33,7 +33,13 @@ W3C specified the Web Content Accessibility Guidelines (WCAG 2.2) success criter
   _(some of the tools used are described on page about [checks done on this website](https://jaffamonkey.com/accessibility-checks))_
 - Optional extra is devising a strategy, to aimed at integrating Accessibility checks as part of design and development cycles.
 
-Treat an audit as a startpoint, to integrating accessibility checks earlier in the development lifecycle.
+## What happens afterwards
+
+A followup meeting happens after audit, which is a quick review of issues to check if there are any queries.
+
+In terms of development, issues found during accessibility audits are straightforward simple fixes (does not require an expert developer, just one well versed with front-end coding fundamentals). How developers choose to approach these issues, will be very much part of your company's internal design/development cycles. Many of the issues are duplicated, so can be fixed at a template/component level.
+
+> Treat an audit as a startpoint, to integrating accessibility checks earlier in the development lifecycle.
 
 ## Accessibility audit clients
 
