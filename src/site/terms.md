@@ -14,11 +14,11 @@ In recent years, I've been focusing on shorter assignments - hands-on testing or
 
 ## Ways of working
 
-I have worked with many teams on projects of all sizes. What I have learnt is fundamentally, a team is a group of people aiming towards the same (or at least similar) goal. This means the real challenge is how a team operates, especially when you are shoe-horning a new person in, on temporary basis. Be assured, I have experience of how to approach. Whilst mhy social kills may be lacking, in context of work, I value my ability to communicate effectively with many different types of people.
+I have worked with many teams on projects of all sizes. What I have learnt is fundamentally, a team is a group of people aiming towards the same (or at least similar) goal. This means the real challenge is how a team operates, especially when you are shoe-horning a new person in, on temporary basis. Be assured, I have experience of how to approach. Whilst my social kills may be lacking, in context of work I value my ability to communicate effectively with many different types of people.
 
 ## My location
 
-After 20-odd years in offices, the last 4 years have been remote-based. This is not an issue, down to my experience in the kind of work I do.
+After 20-odd years doing work within company offices, the last 4 years have been remote-based. This is not an issue, down to my experience in the kind of work I do.
 
 I generally work remotely. Where absolutely necessary I will travel to your location; otherwise I will participate fully via video calls like [Zoom](https://zoom.us/), and messaging services like [Slack](https://slack.com).
 
