@@ -1,6 +1,7 @@
 ---
 title: Accessibility matters
-intro: Accessibility in UX Design extends beyond compliance with legal standards.
+intro: |
+    Accessibility in UX Design extends beyond compliance with legal standards.
 date: 2024-05-11
 tags:
     - Accessibility
