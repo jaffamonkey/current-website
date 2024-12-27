@@ -115,11 +115,11 @@
   // @include dark-mode($background: $colour-dark-mode-highlight);
   // @include high-contrast($background: $colour-high-contrast-highlight);
   display: block;
-  // box-shadow: 0 0 .25em lighten($colour-black, 50%);
-  // margin-bottom: 1em;
-  // margin-top: 1em;
+  box-shadow: 0 0 .25em lighten($colour-black, 50%);
+  margin-bottom: 1em;
+  margin-top: 1em;
   height: auto;
-  // width: 100%;
+  width: 100%;
 
   @media (min-width: $l) {
     @include overspill;
