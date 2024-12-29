@@ -1,7 +1,7 @@
 ---
 title: Joining the Agile wave
 intro: |
-    When I redesigned EvaluAgent's suite of apps consistency of the UI was key, but there had to be a way of discerning one app from another at a glance.
+    I first joined the Agile movement by accident, as I was always on the lookout for more interesting contracts.
 date: 2018-06-01
 tags:
     - Accessibility
@@ -10,4 +10,4 @@ tags:
 featured: true
 ---
 
-I first joined the Agile movement by accident, though I was always on the lookout for more interesting contracts. I join Playstation on a contract in 2001, and they were operating a Scrum methodology.  Scrum became the unofficial 
+I join Playstation on a contract in 2001, and they were operating a Scrum methodology.  Scrum quickly became the default for baffled project management, which fitted nicely into Agile vibe as it was light touch. Whilst not strictly, Agile, it was more Scrum-like projects, I subsequently realised people adopted these things as part of Agile (daily stand-ups, sprints, pair programming, etc).
