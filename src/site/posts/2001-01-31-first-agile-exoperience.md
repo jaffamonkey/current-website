@@ -1,5 +1,5 @@
 ---
-title: Joining the Agile wave
+title: The Agile wave
 intro: |
     I first joined the Agile movement by accident, as I was always on the lookout for more interesting contracts.
 date: 2018-06-01

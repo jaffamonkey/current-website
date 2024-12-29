@@ -1,5 +1,5 @@
 ---
-title: First test management
+title: Test management
 intro: |
     My first contract test managerial role was at Amerada Hess in 1999, though I was hands-on with the automation side.
 date: 2018-06-01
@@ -10,3 +10,4 @@ tags:
 featured: true
 ---
 
+My first contract test managerial role was at Amerada Hess in 1999, though I was hands-on with the automation side.
