@@ -23,7 +23,7 @@ layout: base.html
     <h2 id="writing">My path</h2>
     <!-- <p>If you prefer to dive straight in rather than <a href="/blog/">see the full blog</a>, here are a couple of my favourite articles to get you started:</p> -->
     <ul class="index-list" reversed>
-        {%- set posts = collections.post | reverse %}
+        {%- set posts = collections.skills | reverse %}
         {%- for post in posts %}
             {%- if post.data.featured === true %}
                 {%- include "post-in-list.html" -%}

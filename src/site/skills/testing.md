@@ -3,6 +3,7 @@ title: Testing
 intro: |
     Putting ringing quality assurance and testing in heart of the pipeline, from design to production.
 order: 3
+featured: true
 ---
 <!-- 
 <picture>
