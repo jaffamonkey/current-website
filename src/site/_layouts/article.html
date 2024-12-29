@@ -4,7 +4,7 @@ layout: base.html
 
 <article itemscope itemtype="https://schema.org/BlogPosting">
     <h1 itemprop="title headline">{{ title | smart | safe }}</h1>
-    <section aria-label="Post details" class="post-details">
+    <!-- <section aria-label="Post details" class="post-details">
         <p>
             {% if updated %}First posted {% else %}Posted {% endif %} <span class="entry-published date" itemprop="dateCreated pubdate datePublished" content="{{ date | isoDate }}" >{{ date | date }}</span>
             <meta itemprop="author" content="{{ site.author.name }}" />
@@ -15,7 +15,7 @@ layout: base.html
             ; updated <span itemprop="dateModified" content="{{ updated | isoDate }}">{{ updated | date }}</span>
         {% endif %}
         </p>
-    </section>
+    </section> -->
     <div itemprop="mainEntityOfPage">
         {{ content | safe }}
     </div>
