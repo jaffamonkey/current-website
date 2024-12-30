@@ -1,7 +1,7 @@
 ---
 title: Testing
 intro: |
-    If you are trying to `shift left`, I can help bring testing earlier and more frequently, into the design and development cycles. Quality assurance and testing in heart of the pipeline.
+    If you are trying to `shift left`, I can help bring testing and other quality check, into the design and development cycles. Quality assurance and testing in heart of the pipeline.
 order: 3
 featured: true
 ---
