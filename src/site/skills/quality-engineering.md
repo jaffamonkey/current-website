@@ -10,10 +10,6 @@ featured: true
     <img src="/assets/img/qe.png" alt="EvaluAgent product pattern library intro page, showing a folder system containing the patterns and documenting things such as pattern status labels" width="800" loading="lazy" decoding="async" />
 </picture> -->
 
-## Test everywhere
-
-If you are trying to `shift left`, I can help bring testing earlier and more frequently, into the design and development cycles.
-
 Startups make up the bulk of clients, and I enjoy working with that kind of vibe. But I cater for companies and projects of any size. 
 
 > I am adept at delivering quality to the tightest of timescales.
