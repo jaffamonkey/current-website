@@ -2,13 +2,15 @@
 title: About me
 heading: About me
 intro: |
-    I have been working in area of testing and quality for over 25 years. Do I enjoy it? Well, my mind does like puzzles to work out!
+    I have been working in area of testing and quality for over 25 years, and helped over 65 companies achieve their quality goals.
 layout: default
 permalink: about.html
 cta: true
 summaryImage: apple-touch-icon.png
 summaryImageAlt: jaffamonkey
 ---
+
+> Do I enjoy it? Well, my mind does like puzzles to work out!
 
 I started out in the tail of of the 1990's, when Waterfall was still common and testing was judged by the weight of arch-lever file reports (only half-joking).  
 
