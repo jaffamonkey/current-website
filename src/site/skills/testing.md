@@ -1,5 +1,5 @@
 ---
-title: Quality engineering
+title: Testing
 intro: |
     If you want to `shift left`, I can help bring quality checks into the design and development cycles. Quality assurance, in the heart of the pipeline.
 order: 3
