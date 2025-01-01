@@ -16,13 +16,12 @@ featured: true
 
 Testing is major part of quality engineering, an area of software development concerned strategies for quality assurance in product development and production. This is experience I bring to every project.
 
-- Proof of concept test automation frameworks.
-- Test strategies that will grow, as your way of working does.
-- Quality checks at every step of the way, from design to production.
-- Test automation that can live in the pipeline.
+- Test strategies that will grow wit you.
+- Quality checks at every step of the way.
+- Test automation frameworks within the codebase.
 - Service virtualization to ensure test continuity.
-- Adding performance tests as part of CI.
-- Exploratory testing, to find out what real users could come across.
+- Adding performance tests to CI cycle.
+- Exploratory testing, for discovery beyond what we expect.
 - Leveraging AI to generate scenarios and test data.
 
 ## How does it work?
