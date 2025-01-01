@@ -10,9 +10,15 @@ featured: true
     <img src="/assets/img/qe.png" alt="EvaluAgent product pattern library intro page, showing a folder system containing the patterns and documenting things such as pattern status labels" width="800" loading="lazy" decoding="async" />
 </picture> -->
 
-Startups make up the bulk of clients, and I enjoy working with that kind of vibe. But I cater for companies and projects of any size. 
+Startups make up the bulk of clients, and I enjoy working with that kind of vibe. But I cater for companies and projects of any size, delivering quality to the tightest of timescales. Testing is major part of quality engineering, an area of software development concerned strategies for quality assurance in product development and production. This is experience I bring to every project.
 
-> I am adept at delivering quality to the tightest of timescales.
+- Proof of concept test automation frameworks.
+- Test strategies that will grow, as your way of working does.
+- Quality checks at every step of the way, from design to production.
+- Test automation that can live in the pipeline.
+- Adding performance tests as part of CI.
+- Exploratory testing, to find out what real users could come across.
+- Leveraging AI to generate scenarios and test data.
 
 ## How does it work?
 
