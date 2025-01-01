@@ -20,6 +20,7 @@ Testing is major part of quality engineering, an area of software development co
 - Test strategies that will grow, as your way of working does.
 - Quality checks at every step of the way, from design to production.
 - Test automation that can live in the pipeline.
+- Service virtualization to ensure test continuity.
 - Adding performance tests as part of CI.
 - Exploratory testing, to find out what real users could come across.
 - Leveraging AI to generate scenarios and test data.
@@ -29,15 +30,6 @@ Testing is major part of quality engineering, an area of software development co
 We can work out timescales and tasks, depending on your needs and budget. Whether you want a little help getting more automation in your pipeline, or need some general app performance checks, I can deliver results. 
 
 This won't be done in isolation - it's not the 1990's; the way of working is about engagement with you and your team, to ensure you have input you need.
-
-## Deliverables
-
-- Adaptive test strategies.
-- Applying quality checks from design through to development.
-- UI test frameworks
-- API test frameworks with service virtualization to ensure test continuity.
-- Performance tests with every build to check Accessibility, Load and Security.
-- Integration of tests into CI/CD pipelines.
 
 ## Clients
 
