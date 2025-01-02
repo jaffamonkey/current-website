@@ -14,7 +14,7 @@ featured: true
 
 ## Quality engineering
 
-Testing is major part of quality engineering, an area of software development concerned strategies for quality assurance in product development and production. This is experience I bring to every project.
+Testing is major part of quality engineering, an area of software development concerned with strategies for quality assurance in product development and production. This is experience I bring to every project.
 
 - Test strategies that will grow with you.
 - Quality checks at every step of the way.
