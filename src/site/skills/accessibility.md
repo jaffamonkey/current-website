@@ -9,7 +9,7 @@ featured: true
     <img src="/assets/img/accessibility.png" alt="EvaluAgent product pattern library intro page, showing a folder system containing the patterns and documenting things such as pattern status labels" width="800" loading="lazy" decoding="async" />
 </picture> -->
 
-> The purpose of an Accessibility Audit is to establish how well a website or mobile app performs in terms of access and ease of use by a wide range of potential users, including people with disabilities and the visually impaired. 
+> The purpose of an Accessibility Audit is to establish how well a website or mobile app performs in terms of access and ease of use by a wide range of potential users, including people with disabilities such the visually impaired.
 
 ## Accessibility Standards
 W3C specified the Web Content Accessibility Guidelines (WCAG 2.2) success criteria for Accessibility compliance. Following these guidelines will provide greater accessibility to a wider range of people with disabilities, across a range of devices (desktops, laptops, tablets and smartphones).
