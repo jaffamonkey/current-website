@@ -5,7 +5,7 @@ intro: |
 hideIntro: true
 layout: default
 permalink: site-checks.html
-cta: true
+noCta: true
 ---
 
 ## Lighthouse
