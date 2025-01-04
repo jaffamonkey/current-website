@@ -1,6 +1,6 @@
 module.exports = {
   "title": "tempertemper",
-  "company": "tempertemper Web Design Ltd",
+  "company": "jaffamonkey Quality Engineering Ltd",
   "version": "6.5.8",
   "url": "https://www.tempertemper.net",
   "baseurl": "",
