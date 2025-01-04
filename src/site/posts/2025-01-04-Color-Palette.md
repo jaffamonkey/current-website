@@ -1,14 +1,14 @@
 ---
 title: Accessible color palette generator
 intro: |
-    Speedlify is an eleventy--generated web site published as an open source repository, to help automate continuous performance measurements using Lighthouse.
+    This is a tool to automate the generation of accessible enterprise UI color palettes. 
 date: 2024-07-15
 tags:
-    - Testing
-    - Tools
+    - Accessibility
+    - Contrast
 ---
 
-This is a tool to automate the generation of accessible enterprise UI color palettes.
+This is a tool to automate the generation of accessible enterprise UI color palettes. If you refresh page, the site will present you with new palette, or you can customise your own.
 
 [Accessible color palette generator](https://zesty-gingersnap-8c8a20.netlify.app)
 
