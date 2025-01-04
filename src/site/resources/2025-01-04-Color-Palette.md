@@ -5,7 +5,7 @@ intro: |
 date: 2024-07-15
 tags:
     - Accessibility
-    - Contrast
+    - Design
 ---
 
 This is a tool to automate the generation of accessible enterprise UI color palettes. If you refresh page, the site will present you with new palette, or you can customise your own.
