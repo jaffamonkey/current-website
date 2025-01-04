@@ -20,7 +20,7 @@ npm install --save-dev jest-environment-jsdom
 
 ## Test script
 
-The script below scrape the html from a url, and process it to output what a screen reader would read (in tab order).
+In this example, the script below scrapes the html from a url, and reports what a screen reader would read (in tab order). 
 
 `test.ts`
 ```
