@@ -25,36 +25,40 @@ The script below scrape the html from a url, and process it to output what a scr
 `test.ts`
 ```
 import { virtual } from "@guidepup/virtual-screen-reader";
-const directory = process.cwd();
 const { gotScraping } = require("got-scraping");
 
 describe("Screen Reader Tests", () => {
     test("should traverse the page announcing the expected roles and content", async () => {
+
             let url = "http://www.jaffamonkey.com"
-            let pagename = "Homepage"
+
+            // Retrieves HTML from the url provided
 
             const response = await gotScraping.get(url);
             const html = response.body;
             document.body.innerHTML = html
 
             // Start your Virtual Screen Reader instance
-            await virtual.start({ container: document.body });
 
+            await virtual.start({ container: document.body });
             const spokenPhraseLog = await virtual.spokenPhraseLog();
-            // Navigate your environment with the Virtual Screen Reader similar to how your users would
+            
+            // Navigate your environment with the Virtual Screen Reader similar to how your users would.
+
             while ((await virtual.lastSpokenPhrase()) !== "end of document") {
                 await virtual.next();
             }
-            const spokenPhraseLogClean = spokenPhraseLog.filter(name => !name.includes('document'));
-            fs.writeFile('./results/' + pagename + '.json', JSON.stringify(spokenPhraseLogClean, undefined, 2).toString(), (err: any) => {
-                if (err) throw err;
-            })
+            
+            // Screen reader output displayed ij console, but you can also easily write this to a file.
+            
+            console.log(spokenPhraseLog);
+
             await virtual.stop();
     });
 });
 ```
 
-## Jest config
+## Jest config file
 
 `jest.config.js`
 ```
@@ -75,15 +79,22 @@ module.exports = {
       statements: 100,
     },
   },
-  setupFilesAfterEnv: ["<rootDir>/tests/jest.setup.ts"],
+  setupFilesAfterEnv: ["jest.setup.ts"],
   transform: {
     "^.+\\.tsx?$": ["ts-jest", { tsconfig: "./tsconfig.test.json" }],
   },
 };
 ```
 
+## Jest setup file
+
+`jest.setup.js`
+```
+jest.setTimeout(10000);
+```
+
 ## Run the script
 
 ```
-jest ./tests/test.ts
+jest test.ts
 ```
