@@ -1,5 +1,5 @@
 ---
-title: Accessibility in the SDLC
+title: Accessibility in SDLC
 intro: |
     Adding accessibility checks into the SDLC can help you keep on track for WCAG compliance.
 date: 2024-05-11
