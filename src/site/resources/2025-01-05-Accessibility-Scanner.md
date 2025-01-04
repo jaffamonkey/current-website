@@ -1,5 +1,5 @@
 ---
-title: Accessibility Scanner
+title: Accessibility scanner
 intro: |
     Accessibility Scanner can help you to improve your app for users, and is available on all Android mobile phones.
 date: 2025-01-05
