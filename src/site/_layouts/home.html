@@ -31,6 +31,18 @@ layout: base.html
     </ul>
 </section>
 
+<section aria-labelledby="writing" class="teaser">
+    <h2 id="writing">Useful tools</h2>
+    <ul class="index-list" reversed>
+        {%- set posts = collections.resources | reverse %}
+        {%- for post in posts %}
+            {%- if post.data.featured === true %}
+                {%- include "post-in-list.html" -%}
+            {%- endif %}
+        {%- endfor %}
+    </ul>
+</section>
+
 <!-- <section aria-labelledby="my-favourite-subjects">
     <h2 id="my-favourite-subjects">Services</h2>
     <ul>
