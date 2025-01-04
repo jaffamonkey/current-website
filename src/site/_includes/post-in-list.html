@@ -13,11 +13,11 @@
         {% if post.data.tags.includes('post') %}
             Article posted
         {% elif post.data.tags.includes('resource') %}
-            Resource posted
+            Tags:
         {% else -%}
             Posted
         {% endif -%}
-        {{ post.data.date | date }}
+        <!-- {{ post.data.date | date }} -->
         {% include "post-categories.html" %}
     </p>
     {% endif %}
