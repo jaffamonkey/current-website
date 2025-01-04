@@ -26,10 +26,8 @@ kbd {
 code {
   font-family: $code--font;
   font-weight: inherit;
-  max-width: 30em;
-  display: block;
   // word-wrap: break-word;
-  font-size-adjust: .40;
+  font-size-adjust: .30;
 }
 
 pre code,
