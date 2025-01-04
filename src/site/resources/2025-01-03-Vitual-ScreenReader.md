@@ -123,3 +123,26 @@ jest.setTimeout(10000);
 ```
 jest test.ts
 ```
+
+## Example output
+
+```
+  ....
+  "navigation, primary",
+  "list",
+  "listitem, level 1, position 1, set size 4",
+  "link, About",
+  "end of listitem, level 1, position 1, set size 4",
+  "listitem, level 1, position 2, set size 4",
+  "link, Testing",
+  "end of listitem, level 1, position 2, set size 4",
+  "listitem, level 1, position 3, set size 4",
+  "link, Accessibility",
+  "end of listitem, level 1, position 3, set size 4",
+  "listitem, level 1, position 4, set size 4",
+  "link, Contact, current page",
+  "end of listitem, level 1, position 4, set size 4",
+  "end of list",
+  "end of navigation, primary" 
+  ....
+```
