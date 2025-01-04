@@ -40,8 +40,8 @@ describe("Screen Reader Tests", () => {
 
       // Start your Virtual Screen Reader instance
 
-              await virtual.start({ container: document.body });
-              const spokenPhraseLog = await virtual.spokenPhraseLog();
+      await virtual.start({ container: document.body });
+      const spokenPhraseLog = await virtual.spokenPhraseLog();
             
       // Navigate your environment with the Virtual Screen Reader similar to how your users would.
 
