@@ -16,6 +16,7 @@ tags:
 npm install --save-dev @guidepup/virtual-screen-reader
 npm install --save-dev jest
 npm install --save-dev jest-environment-jsdom
+npm install --save-dev got-scraping
 ```
 
 ## Test script
