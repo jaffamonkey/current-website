@@ -59,6 +59,8 @@ artillery report test-run-report.json
 
 ## Sample report
 
+A HTML report `test-run-report.json` is generated, with the second command.
+
 <picture>
     <img src="/assets/img/artillery.png" alt="Artillery HTML report" width="800" decoding="async" />
 </picture>
