@@ -30,30 +30,29 @@ const { gotScraping } = require("got-scraping");
 describe("Screen Reader Tests", () => {
     test("should traverse the page announcing the expected roles and content", async () => {
 
-            let url = "http://www.jaffamonkey.com"
+      let url = "http://www.jaffamonkey.com"
 
-            // Retrieves HTML from the url provided
+      // Retrieves HTML from the url provided
 
-            const response = await gotScraping.get(url);
-            const html = response.body;
-            document.body.innerHTML = html
+      const response = await gotScraping.get(url);
+      const html = response.body;
+      document.body.innerHTML = html
 
-            // Start your Virtual Screen Reader instance
+      // Start your Virtual Screen Reader instance
 
-            await virtual.start({ container: document.body });
-            const spokenPhraseLog = await virtual.spokenPhraseLog();
+              await virtual.start({ container: document.body });
+              const spokenPhraseLog = await virtual.spokenPhraseLog();
             
-            // Navigate your environment with the Virtual Screen Reader similar to how your users would.
+      // Navigate your environment with the Virtual Screen Reader similar to how your users would.
 
-            while ((await virtual.lastSpokenPhrase()) !== "end of document") {
-                await virtual.next();
-            }
+      while ((await virtual.lastSpokenPhrase()) !== "end of document") {
+      await virtual.next();
+      }
             
-            // Screen reader output displayed ij console, but you can also easily write this to a file.
+      // Screen reader output displayed ij console, but you can also easily write this to a file.
             
-            console.log(spokenPhraseLog);
-
-            await virtual.stop();
+      console.log(spokenPhraseLog);
+      await virtual.stop();
     });
 });
 ```
