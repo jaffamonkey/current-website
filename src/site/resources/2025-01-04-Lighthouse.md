@@ -11,7 +11,7 @@ tags:
     - Design
 ---
 
-It’s an eleventy--generated web site published as an open source repository, to help automate continuous performance measurements using Lighthouse. Example link below is checks running on this website.
+Speedlify an eleventy-generated web site published as an open source repository, to help automate continuous performance measurements using Lighthouse. Example link below is checks running on this website.
 
 [This Website's Lighthouse Statistics](https://elegant-biscotti-25e1e9.netlify.app/jaffamonkey-website)
 

@@ -8,7 +8,9 @@ tags:
     - Screenreader
 ---
 
-> This package automates a [Virtual Screen Reader](https://www.guidepup.dev/docs/virtual), for unit test workflows.
+> Virtual Screen Reader is a screen reader simulator for unit tests.
+
+This package automates a [Virtual Screen Reader](https://www.guidepup.dev/docs/virtual), for unit test workflows.
 
 ## Install
 

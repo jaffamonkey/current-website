@@ -9,6 +9,8 @@ tags:
     - Android
 ---
 
+> Accessibility Scanner can help you to improve your mobile app or website for users, and is available on all Android mobile phones.
+
 Accessibility Scanner scans your screen and provides suggestions to improve the accessibility of your app, based on:
 
 - Content label

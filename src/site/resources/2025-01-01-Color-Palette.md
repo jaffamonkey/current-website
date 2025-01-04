@@ -8,6 +8,8 @@ tags:
     - Design
 ---
 
+> This is a tool to automate the generation of accessible enterprise UI color palettes. 
+
 This is a tool to automate the generation of accessible enterprise UI color palettes. If you refresh page, the site will present you with new palette, or you can customise your own.
 
 [Accessible color palette generator](https://zesty-gingersnap-8c8a20.netlify.app)
