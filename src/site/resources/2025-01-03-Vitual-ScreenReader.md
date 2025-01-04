@@ -2,7 +2,7 @@
 title: Virtual Screen Reader
 intro: |
     Virtual Screen Reader is a screen reader simulator for unit tests.
-date: 202-01-03
+date: 2025-01-03
 tags:
     - Accessibility
     - Screenreader
