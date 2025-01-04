@@ -19,7 +19,7 @@ npm install --save-dev jest-environment-jsdom
 npm install --save-dev got-scraping
 ```
 
-## Test script
+## Test script 1
 
 In this example, the script below scrapes the html from a url, and reports what a screen reader would read (in tab order). 
 
@@ -34,28 +34,53 @@ describe("Screen Reader Tests", () => {
       let url = "http://www.jaffamonkey.com"
 
       // Retrieves HTML from the url provided
-
       const response = await gotScraping.get(url);
       const html = response.body;
       document.body.innerHTML = html
 
       // Start your Virtual Screen Reader instance
-
       await virtual.start({ container: document.body });
       const spokenPhraseLog = await virtual.spokenPhraseLog();
             
       // Navigate your environment with the Virtual Screen Reader similar to how your users would.
-
       while ((await virtual.lastSpokenPhrase()) !== "end of document") {
       await virtual.next();
       }
             
       // Screen reader output displayed ij console, but you can also easily write this to a file.
-            
       console.log(spokenPhraseLog);
       await virtual.stop();
     });
 });
+```
+
+## Test script 2
+
+In this example, the a HTML chunk is added to the script. 
+
+`test.ts`
+```
+import { virtual } from "@guidepup/virtual-screen-reader";
+
+async function setupFocusChangePage() {
+    document.body.innerHTML = `[Enter full of partial HTML here]`;
+}
+
+describe("click", () => {
+    it("should update the screen reader position when a node not currently active for the screen reader is focussed", async () => {
+      setupFocusChangePage();
+      await virtual.start({ container: document.body });
+      const spokenPhraseLog = await virtual.spokenPhraseLog();
+      while ((await virtual.lastSpokenPhrase()) !== "end of document") {
+        await virtual.next();
+      }
+
+      console.log(spokenPhraseLog);
+
+      // Stop your virtual screen reader instance
+      await virtual.stop();
+    }, 180000);
+})
 ```
 
 ## Jest config file
