@@ -1,5 +1,5 @@
 ---
-title: Accessible color palette generator
+title: Accessible colors
 intro: |
     This is a tool to automate the generation of accessible enterprise UI color palettes. 
 date: 2024-07-15

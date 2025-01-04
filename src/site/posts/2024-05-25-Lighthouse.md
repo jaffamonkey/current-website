@@ -1,5 +1,5 @@
 ---
-title: Check your website pages Lighthouse score, with Speedlify
+title: Lighthouse tests
 intro: |
     Speedlify is an eleventy-generated web site published as an open source repository, to help automate continuous performance measurements using Lighthouse.
 date: 2024-07-15
