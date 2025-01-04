@@ -1,6 +1,6 @@
 {
   "layout": "article.html",
-  "hideIntro": true,
+  "hideIntro": false,
   "tags": ["post"],
   "permalink": "blog/{{ customURL if customURL else title | slugify | safe }}.html"
 }
