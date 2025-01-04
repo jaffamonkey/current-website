@@ -38,7 +38,7 @@ _Note: Both `Pa11y Dashboard` and `Pa11y CI` support scripting to get pass login
 
 ## aXe Scan
 
-I like to use different tools, which sometimes highlight issues other tool may not find. Between the [a11y](https://www.a11yproject.com/) and [aXe](https://www.deque.com/axe/) tools, you can get a good coverage on the automation side of accessibility. Here, it's picked up on work I need to do to improve the screenreader output, by adding a caption to the video.
+I like to use different tools, which sometimes highlight issues other tool may not find. Between the [a11y](https://www.a11yproject.com/) and [aXe](https://www.deque.com/axe/) tools, you can get a good coverage on the automation side of accessibility. Here, it's picked up on work I need to do to improve the screen reader output, by adding a caption to the video.
 
 <picture>
     <img src="/assets/img/axe-scan.png" alt="Axe scan CSV report" width="800" loading="lazy" decoding="async" />
@@ -47,15 +47,15 @@ I like to use different tools, which sometimes highlight issues other tool may n
 
 ## Guidepup
 
-[Guidepup](https://www.guidepup.dev/) tools to test screenreader, and return granular screenreader output.
+[Guidepup](https://www.guidepup.dev/) tools to test screen reader, and return granular screen reader output.
 
 <picture>
-    <img src="/assets/img/guidepup.png" alt="Guidepup screenreader report" width="800" loading="lazy" decoding="async" />
+    <img src="/assets/img/guidepup.png" alt="Guidepup screen reader report" width="800" loading="lazy" decoding="async" />
 </picture>
 
 ## Web Rotor
 
-I use the Web Rotor feature that is available with all screenreaders, which represents a page using categorised lists. It provides an easier way to navigate a web page with VoiceOver using lists of headings, links, forms and other items on a web page.
+I use the Web Rotor feature that is available with all screen readers, which represents a page using categorised lists. It provides an easier way to navigate a web page with VoiceOver using lists of headings, links, forms and other items on a web page.
 
 {% set youtubeVideoTitle = "Web Rotor" %}
 {% set youtubeVideoID = "UeSAFQnI53o" %}
