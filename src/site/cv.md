@@ -3,7 +3,7 @@ title: Martin Underhill CV
 heading: Martin Underhill
 intro: |
     Martin Underhill's CV.
-hideIntro: true
+hideIntro: false
 layout: default
 permalink: cv.html
 excludeFromSitemap: true

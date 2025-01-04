@@ -2,7 +2,7 @@
 title: Terms of business
 intro: |
     I love what I do and take pride in having invested time, money and a great deal of energy into developing my skills as a quality assurance and testing expect. I'm constantly reading up on the latest developments in the testing space, brushing up my skills and challenging myself wherever possible. My inspiration in test automation came from Open source world.
-hideIntro: true
+hideIntro: false
 layout: default
 updated: 2019-12-28
 permalink: terms.html

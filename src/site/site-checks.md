@@ -2,7 +2,7 @@
 title: Site checks
 intro: |
     This website was build using Eleventy, Gulp, SCSS and the TemperTemper theme.
-hideIntro: true
+hideIntro: false
 layout: default
 permalink: site-checks.html
 noCta: true
