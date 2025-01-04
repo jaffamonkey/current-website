@@ -5,6 +5,7 @@ intro: |
 date: 2024-07-15
 tags:
     - Accessibility
+    - Screenreader
     - Performance
     - Keyboard
     - Design
