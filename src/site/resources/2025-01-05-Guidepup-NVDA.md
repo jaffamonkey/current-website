@@ -1,14 +1,14 @@
 ---
-title: Guidepup (Voiceover)
+title: Guidepup (NVDA)
 intro: |
-    Guidepup is a screen reader driver for test automation for NVDA and Voiceover.
+    Guidepup is a screen reader driver for test automation for NVDA and nvda.
 date: 2025-01-05
 tags:
     - Accessibility
     - Screenreader
 ---
 
-> [Guidepup](https://www.guidepup.dev/) is a screen reader driver for test automation for NVDA and Voiceover.
+> [Guidepup](https://www.guidepup.dev/) is a screen reader driver for test automation for NVDA and nvda.
 
 ## Environment setup
 
@@ -21,7 +21,7 @@ npx @guidepup/setup
 
 For this example, I am using playwright to drive tests. 
 ```bash
-yarn add @guidepup/playwright @playwright/test fs
+yarn add @guidepup/playwright @playwright/test fs @types/node ts-node typescript
 # install Chromium browser
 npx playwright install chromium
 ```
@@ -30,29 +30,29 @@ npx playwright install chromium
 
 Example of test that logs in and check list of url stored in a json file, and reports the screenreader output for each page into a json file.
 
-`voiceover-playwright.ts`
+`nvda-playwright-test.ts`
 ```typescript
-import { macOSRecord } from "@guidepup/guidepup";
-import { voTest as test } from "./voiceover-test";
+import { windowsRecord } from "@guidepup/record";
+import { voTest as test } from "./nvda-test";
 
 import * as fs from 'fs';
 const directory = process.cwd();
 
-test.describe("Chromium Playwright voiceOver", () => {
-  test("Voiceover Logged In", async ({
+test.describe("Chromium Playwright nvda", () => {
+  test("nvda Logged In", async ({
     page,
-    voiceOver
+    nvda
   }) => {
 
     const jsonString = fs.readFileSync(directory + '/urls.json', 'utf-8');
     let urls = JSON.parse(jsonString);
     for (let i = 0; i < urls.length; i++) {
-      (await voiceOver.spokenPhraseLog()).fill('');
+      (await nvda.spokenPhraseLog()).fill('');
       let getLine = urls[i];
       let url = getLine["url"];
       let pagename = getLine["pagename"];
 
-      const stopRecording = macOSRecord(directory + '/results/recordings/session.mov' + pagename + '.mov');
+      const stopRecording = windowsRecord(directory + '/results/recordings/' + pagename + '.mp4');
 
       if (i == 0) {
         await page.goto(url, {
@@ -69,9 +69,9 @@ test.describe("Chromium Playwright voiceOver", () => {
           waitUntil: "domcontentloaded",
         });
       }
-      const spokenPhraseLog = await voiceOver.spokenPhraseLog();
-      while ((await voiceOver.lastSpokenPhrase()).indexOf('All rights reserved') == -1) {
-        await voiceOver.next();
+      const spokenPhraseLog = await nvda.spokenPhraseLog();
+      while ((await nvda.lastSpokenPhrase()).indexOf('All rights reserved') == -1) {
+        await nvda.next();
       }
       const spokenPhraseLogClean = spokenPhraseLog.filter((str) => str !== '');
       fs.writeFile('./results/' + pagename + '.json', JSON.stringify(spokenPhraseLogClean, undefined, 2).toString(), (err: any) => {
@@ -119,15 +119,14 @@ async function delay(ms: number) {
 ]
 ```
 
-## Voiceover file
+## NVDA setup file
 
-`voiceover-test.ts`
+`nvda-test.ts`
 ```typescript
-import { macOSActivate, voiceOver } from "@guidepup/guidepup";
+import { nvda, WindowsKeyCodes, WindowsModifiers } from "../../lib";
 import { test } from "@playwright/test";
-import type { VoiceOver } from "@guidepup/guidepup";
 
-const applicationNameMap = {
+export const applicationNameMap = {
   chromium: "Chromium",
   chrome: "Google Chrome",
   "chrome-beta": "Google Chrome Beta",
@@ -140,19 +139,66 @@ const applicationNameMap = {
 
 /**
  * These tests extend the default Playwright environment that launches the
- * browser with a running instance of the VoiceOver screen reader for MacOS.
+ * browser with a running instance of the NVDA screen reader for Windows.
  *
- * A fresh started VoiceOver instance `vo` is provided to each test.
+ * A fresh started NVDA instance `nvda` is provided to each test.
  */
-const voTest = test.extend<{ voiceOver: VoiceOver }>({
-  voiceOver: async ({ browserName }, use) => {
+const nvdaTest = test.extend<{ nvda: typeof nvda }>({
+  nvda: async ({ browserName, page }, use) => {
     try {
-      await voiceOver.start();
-      await macOSActivate(applicationNameMap[browserName]);
-      await use(voiceOver);
+      const applicationName = applicationNameMap[browserName];
+
+      if (!applicationName) {
+        throw new Error(`Browser ${browserName} is not installed.`);
+      }
+
+      await nvda.start();
+      await page.goto("about:blank", { waitUntil: "load" });
+
+      let applicationSwitchRetryCount = 0;
+
+      while (applicationSwitchRetryCount < 10) {
+        applicationSwitchRetryCount++;
+
+        await nvda.perform({
+          keyCode: [WindowsKeyCodes.Tab],
+          modifiers: [WindowsModifiers.Alt],
+        });
+
+        const lastSpokenPhrase = await nvda.lastSpokenPhrase();
+
+        if (lastSpokenPhrase.includes(applicationName)) {
+          break;
+        }
+      }
+
+      if (browserName === "chromium") {
+        let mainPageFocusRetryCount = 0;
+
+        // Get to the main page - sometimes focus can land on the address bar
+        while (
+          !(await nvda.lastSpokenPhrase()).includes("document") &&
+          mainPageFocusRetryCount < 10
+        ) {
+          mainPageFocusRetryCount++;
+
+          await nvda.press("F6");
+        }
+      } else if (browserName === "firefox") {
+        // Force focus to somewhere in the web content
+        await page.locator("body").first().focus();
+      }
+
+      // Make sure not in focus mode
+      await nvda.perform(nvda.keyboardCommands.exitFocusMode);
+
+      // Clear the log so clean for the actual test!
+      await nvda.clearSpokenPhraseLog();
+
+      await use(nvda);
     } finally {
       try {
-        await voiceOver.stop();
+        await nvda.stop();
       } catch {
         // swallow stop failure
       }
@@ -160,7 +206,7 @@ const voTest = test.extend<{ voiceOver: VoiceOver }>({
   },
 });
 
-export { voTest };
+export { nvdaTest };
 ```
 
 ## Chrome configuration
@@ -188,13 +234,13 @@ export default config;
 ## Run test
 
 ```bash
-./node_modules/.bin/playwright test --config chromium.config.ts voiceover-playwright.ts
+./node_modules/.bin/playwright test --config chromium.config.ts nvda-playwright-test.ts
 ```
 
 ## Github Actions Example
 
 ```yaml
-name: Playwright VoiceOver
+name: Playwright nvda
 
 on:
   push:
@@ -203,7 +249,7 @@ on:
     branches: [main]
 
 jobs:
-  playwright-voiceover:
+  playwright-nvda:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -220,7 +266,7 @@ jobs:
           record: true
       - run: yarn add @guidepup/playwright @playwright/test fs @types/node ts-node typescript
       - run: npx playwright install chromium
-      - run: ./node_modules/.bin/playwright test --config chromium.config.ts voiceover-playwright.ts
+      - run: ./node_modules/.bin/playwright test --config chromium.config.ts nvda-playwright-test.ts
       - uses: actions/upload-artifact@v3
         if: always()
         continue-on-error: true
