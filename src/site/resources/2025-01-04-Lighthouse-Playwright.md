@@ -79,19 +79,19 @@ npx playwright test lighthouse-playwright.spec.js
   steps:
    # As usual, we simply checkout the project
    - name: Checkout
-    uses: actions/checkout@v4
+     uses: actions/checkout@v4
    # Install the latest version of node
    - name: Set up Node.js
-    uses: actions/setup-node@v4
-    with:
-     node-version: "20"
+     uses: actions/setup-node@v4
+     with:
+      node-version: "20"
    # Install Playwright browsers
    - name: Install Playwright and Lighthouse
-    run: npm install --save-dev playwright playwright-lighthouse
+     run: npm install --save-dev playwright playwright-lighthouse
    # Install Playwright browsers
    - name: Install Playwright Browsers
-    run: npx playwright install --with-deps
+     run: npx playwright install --with-deps
    # Run Lighthouse Playwright tests
    - name: Run test
-    run: npx playwright test lighthouse-playwright.spec.ts
+     run: npx playwright test lighthouse-playwright.spec.ts
 ```
