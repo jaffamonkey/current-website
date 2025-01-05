@@ -52,7 +52,7 @@ test.describe("Chromium Playwright nvda", () => {
       let url = getLine["url"];
       let pagename = getLine["pagename"];
 
-      const stopRecording = windowsRecord(directory + '/results/recordings/' + pagename + '.mp4');
+      const stopRecording = windowsRecord(directory + '/recordings/' + pagename + '.mp4');
 
       if (i == 0) {
         await page.goto(url, {
@@ -273,7 +273,7 @@ jobs:
         with:
           name: artifacts
           path: |
-            **/test-results/**/*
+            **/results/**/*
             **/recordings/**/*
 ```
 
