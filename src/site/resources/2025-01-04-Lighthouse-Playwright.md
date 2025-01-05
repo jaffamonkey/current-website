@@ -24,7 +24,7 @@ npx playwright install
 
 ## The script
 
-`lighthouse-playwright.spec.js`
+`lighthouse-playwright.spec.ts`
 ```javascript
 import { playAudit } from "playwright-lighthouse";
 import { test, chromium } from "@playwright/test";
@@ -56,7 +56,8 @@ test.describe("audit", () => {
     });
 
     await browser.close();
-  });
+  })
+})
 ```
 
 ## Run script
@@ -91,5 +92,5 @@ npx playwright test lighthouse-playwright.spec.js
     run: npx playwright install --with-deps
    # Run Lighthouse Playwright tests
    - name: Run test
-    run: npx playwright test lighthouse-playwright.spec.js
+    run: npx playwright test lighthouse-playwright.spec.ts
 ```
