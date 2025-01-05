@@ -1,5 +1,5 @@
 ---
-title: Lighthouse with Github Actions
+title: Lighthouse & Github
 intro: |
     Lighthouse is an open-source, automated tool to help you improve the quality of web pages.
 date: 2025-01-05
