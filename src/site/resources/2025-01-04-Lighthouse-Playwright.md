@@ -26,37 +26,36 @@ npx playwright install
 
 `lighthouse-playwright.spec.js`
 ```javascript
-const playAudit = require("playwright-lighthouse");
+import { playAudit } from 'playwright-lighthouse';
 const test = require("@playwright/test");
+import { chromium } from 'playwright';
 
-test.describe("audit", () => {
+test.describe("Lighthouse report", () => {
     test("run lighthouse", async () => {
         
-        // This ensures the login session is shared between pages.
-        const browser = await chromium.launchPersistentContext(userDataDir, {
-            args: ['--remote-debugging-port=9222'],
-          });
-        const page = await browser.newPage();
-        await page.goto("https://practicetestautomation.com/practice-test-login/");
-        await page.getByLabel('Username').fill('student');
-        await page.getByLabel('Password').fill('Password123');
-        await page.getByText('Submit').click();
-        await page.waitForURL('https://practicetestautomation.com/logged-in-successfully/');
-        await page.goto("https://practicetestautomation.com/courses/");
-        await page.waitForSelector('#selenium-webdriver-with-java-for-beginners')
+      // Playwright by default does not share any context (eg auth state) between pages, and this code is to address that.
+      const browser = await chromium.launchPersistentContext(userDataDir, {
+            args: ['--remote-debugging-port=9222']});
+      const page = await browser.newPage();
+      await page.goto("https://practicetestautomation.com/practice-test-login/");
+      await page.getByLabel('Username').fill('student');
+      await page.getByLabel('Password').fill('Password123');
+      await page.getByText('Submit').click();
+      await page.waitForURL('https://practicetestautomation.com/logged-in-successfully/');
+      await page.goto("https://practicetestautomation.com/courses/");
+      await page.waitForSelector('#selenium-webdriver-with-java-for-beginners')
 
-        await playAudit({
-            page: page,
-            thresholds: {
-                performance: 60,
-                accessibility: 100,
-                "best-practices": 80,
-                seo: 80
-            },
-            port: 9222
+      await playAudit({
+        page: page,
+          thresholds: {
+            performance: 60,
+            accessibility: 100,
+            "best-practices": 80,
+            seo: 80
+          },
+          port: 9222
         });
-
-        await browser.close();
+      await browser.close();
     });
 });
 
