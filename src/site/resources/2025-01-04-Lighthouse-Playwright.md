@@ -17,7 +17,7 @@ tags:
 ## Install
 
 ```bash
-npm install --save-dev playwright playwright-lighthouse chai fs
+npm install --save-dev playwright playwright-lighthouse
 # playwright can install supported browsers.
 npx playwright install
 ```
@@ -26,33 +26,16 @@ npx playwright install
 
 `lighthouse-playwright.spec.js`
 ```javascript
-import { playAudit } from 'playwright-lighthouse';
-const test = require("@playwright/test");
-import { chromium } from 'playwright';
-import fs from 'fs';
-import chai from 'chai';
-const expect = chai.expect;
+import { playAudit } from "playwright-lighthouse";
+import { test, chromium } from "@playwright/test";
 
-test.describe("Lighthouse report", () => {
+test.describe("audit", () => {
   test("run lighthouse", async () => {
-    let reportDirectory, reportFilename, reportFileTypes, browser, page;
-
-    before(async () => {
-      reportDirectory = `${process.cwd()}/lighthouse`;
-      reportFilename = 'reports-test';
-      reportFileTypes = ['html', 'json'];
-      reportFileTypes.forEach((type) => {
-        var fileToDelete = `${reportDirectory}/${reportFilename}.${type}`;
-        if (fs.existsSync(fileToDelete)) {
-          fs.unlinkSync(fileToDelete);
-        }
-      });
-
-      // Playwright by default does not share any context (eg auth state) between pages, and this code is to address that.
-      const browser = await chromium.launchPersistentContext(userDataDir, {
-        args: ['--remote-debugging-port=9222']
-      });
-      const page = await browser.newPage();
+    const browser = await chromium.launchPersistentContext(userDataDir, {
+        args: ['--remote-debugging-port=9222'],
+        headless: true
+    });
+    const page = await browser.newPage();
       await page.goto("https://practicetestautomation.com/practice-test-login/");
       await page.getByLabel('Username').fill('student');
       await page.getByLabel('Password').fill('Password123');
@@ -61,56 +44,19 @@ test.describe("Lighthouse report", () => {
       await page.goto("https://practicetestautomation.com/courses/");
       await page.waitForSelector('#selenium-webdriver-with-java-for-beginners')
 
-      await playAudit({
-        page: page,
-        thresholds: {
-          performance: 60,
-          accessibility: 100,
-          "best-practices": 80,
-          seo: 80
-        },
-        port: 9222
-      });
+    await playAudit({
+      page: page,
+      thresholds: {
+        performance: 50,
+        accessibility: 100,
+        "best-practices": 100,
+        seo: 100
+      },
+      port: 9222
     });
 
-    after(async () => {
-      await browser.close();
-    });
-
-    it('writes json and html reports', async () => {
-      const reportDirectory = `${process.cwd()}/lighthouse`;
-      const reportFilename = 'reports-test';
-
-      await playAudit({
-        reports: {
-          formats: {
-            json: true,
-            html: true,
-            csv: false,
-          },
-          name: reportFilename,
-          directory: reportDirectory,
-        },
-        page: page,
-        thresholds: {
-          performance: 30,
-        },
-        port: 9222,
-      });
-
-      reportFileTypes.forEach(() => {
-        reportFileTypes.forEach((type) => {
-          expect(
-            fs.existsSync(`${reportDirectory}/${reportFilename}.${type}`),
-            `${type} Report file does not exist.`
-          ).to.be.true;
-        });
-      });
-    });
+    await browser.close();
   });
-});
-
-export { playAudit };
 ```
 
 ## Run script
@@ -139,7 +85,7 @@ npx playwright test lighthouse-playwright.spec.js
      node-version: "20"
    # Install Playwright browsers
    - name: Install Playwright and Lighthouse
-    run: npm install --save-dev playwright playwright-lighthouse chai fs
+    run: npm install --save-dev playwright playwright-lighthouse
    # Install Playwright browsers
    - name: Install Playwright Browsers
     run: npx playwright install --with-deps
