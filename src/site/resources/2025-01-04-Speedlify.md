@@ -2,7 +2,7 @@
 title: Speedlify
 intro: |
     Speedlify is an eleventy-generated web site published as an open source repository, to help automate continuous performance measurements using Lighthouse.
-date: 2024-07-15
+date: 2025-01-04
 tags:
     - Accessibility
     - Screenreader
