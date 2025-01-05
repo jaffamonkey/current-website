@@ -26,7 +26,7 @@ npm install --save-dev got-scraping
 In this example, the script below scrapes the html from a url, and reports what a screen reader would read (in tab order). 
 
 `test.ts`
-```
+```typescript
 import { virtual } from "@guidepup/virtual-screen-reader";
 const { gotScraping } = require("got-scraping");
 
@@ -61,7 +61,7 @@ describe("Screen Reader Tests", () => {
 In this example, the a HTML chunk is added to the script. 
 
 `test.ts`
-```
+```typescript
 import { virtual } from "@guidepup/virtual-screen-reader";
 
 async function setupFocusChangePage() {
@@ -88,7 +88,7 @@ describe("click", () => {
 ## Jest config file
 
 `jest.config.js`
-```
+```javascript
 // eslint-disable-next-line no-undef
 module.exports = {
   preset: "ts-jest",
@@ -116,20 +116,20 @@ module.exports = {
 ## Jest setup file
 
 `jest.setup.js`
-```
+```javascript
 jest.setTimeout(10000);
 ```
 
 ## Run the script
 
-```
+```bash
 jest test.ts
 ```
 
 ## Example output
 
 ```
-  ....
+  ....json
   "navigation, primary",
   "list",
   "listitem, level 1, position 1, set size 4",

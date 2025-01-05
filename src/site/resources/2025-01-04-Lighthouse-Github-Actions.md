@@ -19,7 +19,7 @@ You can run [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/)
 
 Here, we are going to use [Github Actions](https://github.com/features/actions) to run the Lighthouse tool against a list of urls. Individual HTML and json reports are generated for each url. Add the yaml file, to the `.github/workflows` directory in your Github project.
 
-```
+```yaml
 name: Lighthouse Report From Urls List
 on: push
 jobs:

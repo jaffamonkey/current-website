@@ -20,7 +20,7 @@ npm install -g artillery@latest
 This example shows how you can modify how Artillery selects a scenario for a virtual user during load testing. In Artillery, each VU will be assigned to one of the defined scenarios. By default, each scenario has a weight of 1, meaning each scenario has the same probability of getting assigned to a VU. By specifying a weight in a scenario, you'll increase the chances of Artillery assigning the scenario for a VU. The probability of a scenario getting chosen depends on the total weight for all scenarios.
 
 `artillery-test.yml`
-```
+```yaml
 config:
   target: "https://jaffamonkey.com"
   phases:
@@ -52,7 +52,7 @@ scenarios:
 
 ## Run example
 
-```
+```bash
 artillery run --output test-run-report.json artillery-test.yml
 artillery report test-run-report.json
 ```
