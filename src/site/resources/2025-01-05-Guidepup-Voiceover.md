@@ -34,7 +34,6 @@ Example of test that logs in and check list of url stored in a json file, and re
 ```typescript
 import { macOSRecord } from "@guidepup/guidepup";
 import { voTest as test } from "./voiceover-test";
-
 import * as fs from 'fs';
 const directory = process.cwd();
 
