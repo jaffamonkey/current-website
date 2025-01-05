@@ -101,19 +101,19 @@ async function delay(ms: number) {
         "url": "https://practicetestautomation.com/logged-in-successfully/"
     }
         {
-        "pagename": "Login",
+        "pagename": "Courses",
         "url": "https://practicetestautomation.com/courses/"
     },
     {
-        "pagename": "Logged-in",
+        "pagename": "Blog",
         "url": "https://practicetestautomation.com/blog/"
     }
         {
-        "pagename": "Login",
+        "pagename": "Practice",
         "url": "https://practicetestautomation.com/practice/"
     },
     {
-        "pagename": "Logged-in",
+        "pagename": "Contact",
         "url": "https://practicetestautomation.com/contact/"
     }
 ]
