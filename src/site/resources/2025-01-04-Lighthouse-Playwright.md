@@ -32,7 +32,7 @@ const test = require("@playwright/test");
 test.describe("audit", () => {
     test("run lighthouse", async () => {
         
-        // Playwright by default does not share any context (eg auth state) between pages, and this code is to address that.
+        // This ensures the login session is shared between pages.
         const browser = await chromium.launchPersistentContext(userDataDir, {
             args: ['--remote-debugging-port=9222'],
           });
