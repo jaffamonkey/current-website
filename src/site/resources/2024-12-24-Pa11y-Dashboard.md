@@ -42,7 +42,7 @@ PORT=8080 node index.js
     <img src="/assets/img/pa11y1.png" alt="Pa11y dashboard" width="800" loading="lazy" decoding="async" />
 </picture>
 
-## Add url form
+## Add a url
 
 1. Add the name of the URL
 2. Add the URL that you want to test
@@ -55,6 +55,8 @@ PORT=8080 node index.js
 9. If you want to add cookies, we can add them to `Add headers`.
 10. If you want to ignore a certain set of rules, you can add them to `Ignore rules`.
 11. Click on Add URL button
+
+From the Setting cog icon in top right of URL widget on dashboard, you can run Pa11y tool against the url, as any time.
 
 ## Authentication
 

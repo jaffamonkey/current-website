@@ -26,15 +26,16 @@ npx playwright install
 
 `lighthouse-playwright.spec.js`
 ```javascript
-import { playAudit } from "playwright-lighthouse";
-import { test, chromium } from "@playwright/test";
+const playAudit = require("playwright-lighthouse");
+const test = require("@playwright/test");
 
 test.describe("audit", () => {
     test("run lighthouse", async () => {
-        const browser = await chromium.launch({
-            args: ["--remote-debugging-port=9222"],
-            headless: true
-        });
+        
+        // Playwright by default does not share any context (eg auth state) between pages, and this code is to address that.
+        const browser = await chromium.launchPersistentContext(userDataDir, {
+            args: ['--remote-debugging-port=9222'],
+          });
         const page = await browser.newPage();
         await page.goto("https://practicetestautomation.com/practice-test-login/");
         await page.getByLabel('Username').fill('student');
@@ -58,6 +59,8 @@ test.describe("audit", () => {
         await browser.close();
     });
 });
+
+export { playAudit };
 ```
 
 ## Run script
