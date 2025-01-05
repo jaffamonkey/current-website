@@ -31,6 +31,7 @@ import { test, chromium } from "@playwright/test";
 
 test.describe("audit", () => {
   test("run lighthouse", async () => {
+     // Playwright by default does not share any context (eg auth state) between pages.
     const browser = await chromium.launchPersistentContext(userDataDir, {
         args: ['--remote-debugging-port=9222'],
         headless: true
