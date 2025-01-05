@@ -9,6 +9,7 @@ tags:
     - Performance
     - Keyboard
     - Design
+    - GithubActions
 ---
 
 > Lighthouse is an open-source, automated tool to help you improve the quality of web pages.
