@@ -2,6 +2,7 @@
 title: Artillery load test
 intro: |
     Artillery is a scalable, flexible and easy-to-use platform that contains everything you need for production-grade load testing.
+featured: true
 date: 2025-01-05
 tags:
     - Performance
