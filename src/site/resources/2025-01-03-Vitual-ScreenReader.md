@@ -87,7 +87,7 @@ describe("click", () => {
 
 ## Jest config file
 
-`jest.config.js`
+`jest.config.cjs`
 ```javascript
 // eslint-disable-next-line no-undef
 module.exports = {
@@ -113,10 +113,38 @@ module.exports = {
 };
 ```
 
+## Typescript config file
+
+`tsconfig.json`
+```json
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "allowJs": true,
+    "jsx": "react",
+    "noErrorTruncation": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "lib",
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "rootDir": "./src"
+  },
+  "include": ["**/*"],
+  "exclude": ["node_modules"]
+}
+```
+
 ## Jest setup file
 
-`jest.setup.js`
-```javascript
+`jest.setup.ts`
+```typescript
 jest.setTimeout(10000);
 ```
 
