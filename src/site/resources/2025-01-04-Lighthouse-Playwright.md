@@ -37,13 +37,13 @@ test.describe("audit", () => {
         headless: true
     });
     const page = await browser.newPage();
-      await page.goto("https://practicetestautomation.com/practice-test-login/");
-      await page.getByLabel('Username').fill('student');
-      await page.getByLabel('Password').fill('Password123');
-      await page.getByText('Submit').click();
-      await page.waitForURL('https://practicetestautomation.com/logged-in-successfully/');
-      await page.goto("https://practicetestautomation.com/courses/");
-      await page.waitForSelector('#selenium-webdriver-with-java-for-beginners')
+    await page.goto("https://practicetestautomation.com/practice-test-login/");
+    await page.getByLabel('Username').fill('student');
+    await page.getByLabel('Password').fill('Password123');
+    await page.getByText('Submit').click();
+    await page.waitForURL('https://practicetestautomation.com/logged-in-successfully/');
+    await page.goto("https://practicetestautomation.com/courses/");
+    await page.waitForSelector('#selenium-webdriver-with-java-for-beginners')
 
     await playAudit({
       page: page,
