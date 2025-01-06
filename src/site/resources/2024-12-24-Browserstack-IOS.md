@@ -8,6 +8,7 @@ tags:
     - IOS
     - DeviceTesting
     - Mobile
+    - Appium
 ---
 
 > Browserstack is a cloud web and mobile testing platform that provides developers with the ability to test their websites and mobile applications across on-demand browsers, operating systems and real mobile devices. 
