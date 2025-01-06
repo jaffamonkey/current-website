@@ -12,7 +12,7 @@ tags:
 ## Installation
 
 ```bash
-npm install superagent assert express
+npm install --save-dev superagent assert express
 ```
 
 ## The test
@@ -29,7 +29,7 @@ superagent
   .send({ "title": randomTitle }) // sends data in JSON format
   .end((err, res) => {
     assert.ifError(err);
-    assert.equal(res.status, 201); 
+    assert.equal(res.status, 201);
     assert.equal(randomTitle, res.body.todo.title);
   });
 
@@ -39,6 +39,19 @@ superagent
     assert.ifError(err);
     assert.equal(res.status, 200);
   });
+
+// promise with then/catch
+superagent.get('http://localhost:3001/api/v1/todos').then(console.log).catch(console.error);
+
+// promise with async/await
+(async () => {
+  try {
+    const res = await superagent.post('http://localhost:3001/api/v1/todos').send({ "title": randomTitle });
+    console.log(res);
+  } catch (err) {
+    console.error(err);
+  }
+})();
 ```
 ## The API server
 
