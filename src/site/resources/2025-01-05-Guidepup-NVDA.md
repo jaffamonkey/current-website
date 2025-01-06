@@ -209,7 +209,7 @@ const nvdaTest = test.extend<{ nvda: typeof nvda }>({
 export { nvdaTest };
 ```
 
-## ## Playwright browser configuration
+## Playwright browser configuration
 
 `playwright.config.ts`
 ```typescript
