@@ -3,7 +3,6 @@ title: Guidepup (NVDA)
 intro: |
     Guidepup is a screen reader driver for test automation for NVDA and nvda.
 date: 2025-01-05
-featured: true
 tags:
     - Accessibility
     - Screenreader
