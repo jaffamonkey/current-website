@@ -39,12 +39,10 @@ desiredCaps = {
   'name': 'first_test'
 };
 
-// Initialize the remote Webdriver using BrowserStack remote URL
-// and desired capabilities defined above
+// Initialize the remote Webdriver using BrowserStack remote URL and desired capabilities defined above
 driver = wd.promiseRemote("http://hub-cloud.browserstack.com/wd/hub");
 
 // Test case for the BrowserStack sample iOS app. 
-// If you have uploaded your app, update the test case here.
 driver.init(desiredCaps)
   .then(function () {
     return driver.waitForElementById('Text Button', asserters.isDisplayed 
