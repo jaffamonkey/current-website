@@ -80,3 +80,5 @@ driver.init(desiredCaps)
 ```
 node android-browserstack.js
 ```
+
+_You can check reports on your BrowserStack account_

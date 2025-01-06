@@ -84,3 +84,5 @@ driver.init(desiredCaps)
 ```
 node ios-browserstack.js
 ```
+
+_You can check reports on your BrowserStack account_
