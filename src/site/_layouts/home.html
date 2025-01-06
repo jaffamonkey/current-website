@@ -34,7 +34,7 @@ layout: base.html
 <section aria-labelledby="writing" class="teaser">
     <h2 id="writing">Resources</h2>
     <ul class="index-list" reversed>
-        {%- set posts = collections.resources | reverse %}
+        {%- set posts = collections.resource | reverse %}
         {%- for post in posts %}
             {%- if post.data.featured === true %}
                 {%- include "post-in-list.html" -%}
