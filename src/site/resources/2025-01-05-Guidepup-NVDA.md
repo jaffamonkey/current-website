@@ -209,9 +209,9 @@ const nvdaTest = test.extend<{ nvda: typeof nvda }>({
 export { nvdaTest };
 ```
 
-## Chrome configuration
+## ## Playwright browser configuration
 
-`chromium.config.ts`
+`playwright.config.ts`
 ```typescript
 import { devices, PlaywrightTestConfig } from "@playwright/test";
 
@@ -234,7 +234,7 @@ export default config;
 ## Run test
 
 ```bash
-./node_modules/.bin/playwright test --config chromium.config.ts nvda-playwright-test.ts
+./node_modules/.bin/playwright test --config playwright.config.ts nvda-playwright-test.ts
 ```
 
 ## Github Actions Example

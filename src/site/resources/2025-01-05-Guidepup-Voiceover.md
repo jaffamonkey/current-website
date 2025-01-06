@@ -16,6 +16,7 @@ tags:
 Setup your environment for screen reader automation with @guidepup/setup:
 ```bash
 npx @guidepup/setup
+npm install @guidepup/guidepup
 ```
 
 ## Install Guidepup
@@ -163,9 +164,9 @@ const voTest = test.extend<{ voiceOver: VoiceOver }>({
 export { voTest };
 ```
 
-## Chrome configuration
+## Playwright browser configuration
 
-`chromium.config.ts`
+`playwright.config.ts`
 ```typescript
 import { devices, PlaywrightTestConfig } from "@playwright/test";
 
@@ -188,7 +189,7 @@ export default config;
 ## Run test
 
 ```bash
-./node_modules/.bin/playwright test --config chromium.config.ts voiceover-playwright-test.ts
+./node_modules/.bin/playwright test --config playwright.config.ts voiceover-playwright-test.ts
 ```
 
 ## Github Actions Example
