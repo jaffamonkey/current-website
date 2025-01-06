@@ -7,12 +7,14 @@ resources: true
 noCta: true
 ---
 
-<ul class="index-list" reversed>
-    {%- set posts = collections.resource | reverse %}
-    {%- for post in posts %}
-            {%- include "post-in-list.html" -%}
-    {%- endfor %}
-</ul>
+<section aria-labelledby="writing" class="teaser">
+    <ul class="index-list" reversed>
+        {%- set posts = collections.resource | reverse %}
+        {%- for post in posts %}
+                {%- include "post-in-list.html" -%}
+        {%- endfor %}
+    </ul>
+</section>
 
 <!-- <ol class="hfeed index-list" reversed>
     {%- for post in collections.resource | reverse %}
