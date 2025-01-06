@@ -143,7 +143,7 @@ java -jar wiremock-standalone-3.10.0.jar --port 8080
 curl -d '{"iban":"NL13ABNA8672131290"}' -H "Content-Type: application/json" -X POST http://localhost:8080/api/v1/check
 ```
 
-**Expected result**
+#### Expected result
 
 ```json
 {
@@ -161,7 +161,7 @@ curl -d '{"iban":"NL13ABNA8672131290"}' -H "Content-Type: application/json" -X P
 curl -d '{"id":"b3e3541fd0577426d1d190cfc04d4d00","deposits":{"first": 0.06,"second": 0.10}}' -H "Content-Type: application/json" -X POST http://localhost:8080/api/v1/verify
 ```
 
-**Expected result**
+#### Expected result
 
 ```json
 {
