@@ -137,7 +137,7 @@ java -jar wiremock-standalone-3.10.0.jar --port 8080
 
 ## Testing
 
-### Check the account
+#### Check the account
 
 ```bash
 curl -d '{"iban":"NL13ABNA8672131290"}' -H "Content-Type: application/json" -X POST http://localhost:8080/api/v1/check
@@ -155,7 +155,7 @@ curl -d '{"iban":"NL13ABNA8672131290"}' -H "Content-Type: application/json" -X P
  }
 ```
 
-### Verify the deposit
+#### Verify the deposit
 
 ```bash
 curl -d '{"id":"b3e3541fd0577426d1d190cfc04d4d00","deposits":{"first": 0.06,"second": 0.10}}' -H "Content-Type: application/json" -X POST http://localhost:8080/api/v1/verify
