@@ -9,8 +9,12 @@ tags:
     - Mobile
 ---
 
+
 > Browserstack is a cloud web and mobile testing platform that provides developers with the ability to test their websites and mobile applications across on-demand browsers, operating systems and real mobile devices. 
 
+## Example test
+
+`android-browserstack.js`
 ```javascript
 let wd = require('wd');
 let assert = require('assert');
@@ -69,4 +73,10 @@ driver.init(desiredCaps)
   })
   .done();
 
+```
+
+## Run test 
+
+```
+node android-browserstack.js
 ```
