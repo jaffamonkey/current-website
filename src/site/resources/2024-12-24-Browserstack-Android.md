@@ -14,12 +14,12 @@ tags:
 ## Install
 
 ```bash
-npm install --save-dev chai chai-as-promised colors wd
+npm install --save-dev assert wd
 ```
 
 ## Example test
 
-This test is initiated from your machine, and runs and reports on BrowserStack cloud.
+This test is initiated from your machine, and runs test then report results, on the BrowserStack cloud.
 
 `android-browserstack.js`
 ```javascript

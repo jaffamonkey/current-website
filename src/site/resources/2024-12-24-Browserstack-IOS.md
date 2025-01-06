@@ -12,9 +12,15 @@ tags:
 
 > Browserstack is a cloud web and mobile testing platform that provides developers with the ability to test their websites and mobile applications across on-demand browsers, operating systems and real mobile devices. 
 
+## Install
+
+```bash
+npm install --save-dev assert wd
+```
+
 ## Example iOS app test
 
-This test is initiated from your machine, and runs and reports on BrowserStack cloud.
+This test is initiated from your machine, and runs test then report results, on the BrowserStack cloud.
 
 `ios-browserstack.js`
 ```javascript
