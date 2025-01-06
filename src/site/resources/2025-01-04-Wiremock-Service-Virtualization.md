@@ -1,5 +1,5 @@
 ---
-title: Wiremock Service Virtualization
+title: Service Virtualization
 intro: |
     Service virtualization aims to simulate an entire system, and helps to maintain a continuity to regular test runs.
 date: 2025-01-04
@@ -8,7 +8,7 @@ tags:
     - ServiceVirtualization
 ---
 
-Service virtualization aims to simulate an entire system, and helps to maintain a continuity to regular test runs. For this example, we will be using the Wiremock standalone version.
+Service virtualization aims to simulate an entire system, and helps to maintain a continuity to regular test runs. For this example, we will be using [Wiremock](https://wiremock.org/) (standalone version).
 
 ## Setup
 
