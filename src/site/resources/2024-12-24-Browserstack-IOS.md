@@ -14,6 +14,8 @@ tags:
 
 ## Example iOS app test
 
+This test is initiated from your machine, and runs and reports on BrowserStack cloud.
+
 `ios-browserstack.js`
 ```javascript
 let wd = require('wd');
@@ -83,4 +85,4 @@ driver.init(desiredCaps)
 node ios-browserstack.js
 ```
 
-_You can check reports on your BrowserStack account_
+_You can check reports on your BrowserStack account. You can additional code to retrieve the reports and test artefacts from BrowserStack cloud_

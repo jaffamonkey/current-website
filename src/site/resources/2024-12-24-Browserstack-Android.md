@@ -11,7 +11,15 @@ tags:
 
 > Browserstack is a cloud web and mobile testing platform that provides developers with the ability to test their websites and mobile applications across on-demand browsers, operating systems and real mobile devices. 
 
+## Install
+
+```bash
+npm install --save-dev chai chai-as-promised colors wd
+```
+
 ## Example test
+
+This test is initiated from your machine, and runs and reports on BrowserStack cloud.
 
 `android-browserstack.js`
 ```javascript
@@ -78,4 +86,4 @@ driver.init(desiredCaps)
 node android-browserstack.js
 ```
 
-_You can check reports on your BrowserStack account_
+_You can check reports on your BrowserStack account. You can additional code to retrieve the reports and test artefacts from BrowserStack cloud_
