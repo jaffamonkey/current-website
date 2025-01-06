@@ -2,13 +2,22 @@
 title: Resources
 intro: |
     Resources to help improve quality of your web or mobile app.
-layout: default
-resources: true
+layout: base.html
+resources: false
 noCta: true
 ---
 
-<ol class="hfeed index-list" reversed>
+<section aria-labelledby="writing" class="teaser">
+    <ul class="index-list" reversed>
+        {%- set posts = collections.resource | reverse %}
+        {%- for post in posts %}
+                {%- include "post-in-list.html" -%}
+        {%- endfor %}
+    </ul>
+</section>
+
+<!-- <ol class="hfeed index-list" reversed>
     {%- for post in collections.resource | reverse %}
         {%- include "post-in-list.html" %}
     {%- endfor %}
-</ol>
+</ol> -->
