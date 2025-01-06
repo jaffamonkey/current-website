@@ -16,7 +16,6 @@ tags:
 Setup your environment for screen reader automation with @guidepup/setup:
 ```bash
 npx @guidepup/setup
-npm install @guidepup/guidepup
 ```
 
 ## Install Guidepup
