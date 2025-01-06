@@ -47,7 +47,8 @@ superagent.get('http://localhost:3001/api/v1/todos').then(console.log).catch(con
 (async () => {
   try {
     const res = await superagent.post('http://localhost:3001/api/v1/todos').send({ "title": randomTitle });
-    console.log(res);
+    assert.equal(res.status, 201);
+    assert.equal(randomTitle, res.body.todo.title);
   } catch (err) {
     console.error(err);
   }
