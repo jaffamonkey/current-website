@@ -30,7 +30,7 @@ Firstly, create a project folder and add `mappings` and `__files` folders.  Then
     },
     "response": {
        "status": 404,
-       "bodyFileName": "micro-deposit-send-not-found-response.json",
+       "bodyFileName": "deposit-not-sent-response.json",
        "headers": {
           "Content-Type": "application/json"
        }
@@ -51,14 +51,14 @@ Firstly, create a project folder and add `mappings` and `__files` folders.  Then
      "bodyPatterns": [
         {
            "equalToJson": {
-              "iban": "NL13ABNA8672131290"
+              "iban": "UK34335353453435"
            }
         }
      ]
   },
   "response": {
      "status": 201,
-     "bodyFileName": "micro-deposit-send-sucessful-response.json",
+     "bodyFileName": "deposit-sent-response.json",
      "headers": {
         "Content-Type": "application/json"
      }
@@ -77,7 +77,7 @@ Firstly, create a project folder and add `mappings` and `__files` folders.  Then
 	   "urlPathPattern": "/api/v1/verify",
 	   "bodyPatterns": [{
 			"equalToJson": {
-				"id": "b3e3541fd0577426d1d190cfc04d4d00",
+				"id": "icpwzdnuxu53wyg5gp6ek8nhi",
 				"deposits": {
 					"first": 0.06,
 					"second": 0.10
@@ -87,7 +87,7 @@ Firstly, create a project folder and add `mappings` and `__files` folders.  Then
 	},
 	"response": {
 	   "status": 201,
-	   "bodyFileName": "micro-deposit-verification-successful-response.json",
+	   "bodyFileName": "successful-verification-response.json",
 	   "headers": {
 		  "Content-Type": "application/json"
 	   }
@@ -110,7 +110,7 @@ Firstly, create a project folder and add `mappings` and `__files` folders.  Then
 `__files/deposit-sent-response.json`
 ```json
 {
-    "id": "b3e3541fd0577426d1d190cfc04d4d00",
+    "id": "icpwzdnuxu53wyg5gp6ek8nhi",
     "deposits": {
        "first": 0.06,
        "second": 0.10
@@ -140,14 +140,14 @@ java -jar wiremock-standalone-3.10.0.jar --port 8080
 #### Check the account
 
 ```bash
-curl -d '{"iban":"NL13ABNA8672131290"}' -H "Content-Type: application/json" -X POST http://localhost:8080/api/v1/check
+curl -d '{"iban":"UK34335353453435"}' -H "Content-Type: application/json" -X POST http://localhost:8080/api/v1/check
 ```
 
 #### Expected result
 
 ```json
 {
-    "id":"b3e3541fd0577426d1d190cfc04d4d00",
+    "id":"icpwzdnuxu53wyg5gp6ek8nhi",
     "deposits":{
        "first":0.06,
        "second":0.10
@@ -158,7 +158,7 @@ curl -d '{"iban":"NL13ABNA8672131290"}' -H "Content-Type: application/json" -X P
 #### Verify the deposit
 
 ```bash
-curl -d '{"id":"b3e3541fd0577426d1d190cfc04d4d00","deposits":{"first": 0.06,"second": 0.10}}' -H "Content-Type: application/json" -X POST http://localhost:8080/api/v1/verify
+curl -d '{"id":"icpwzdnuxu53wyg5gp6ek8nhi","deposits":{"first": 0.06,"second": 0.10}}' -H "Content-Type: application/json" -X POST http://localhost:8080/api/v1/verify
 ```
 
 #### Expected result
