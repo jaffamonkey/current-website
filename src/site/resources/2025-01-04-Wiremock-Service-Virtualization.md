@@ -11,7 +11,7 @@ tags:
 Service virtualization aims to simulate an entire system, and helps to maintain a continuity to regular test runs. For this example, we will be using [Wiremock](https://wiremock.org/) (standalone version).
 
 
-## Intall Wiremock
+## Install Wiremock
 
 ```bash
 cd [enter directory you wish to run wiremock from]
@@ -20,8 +20,12 @@ wget https://repo1.maven.org/maven2/org/wiremock/wiremock-standalone/3.10.0/wire
 java -jar wiremock-standalone-3.10.0.jar --port 8080
 ```
 
-The reason for starting the service first, is two folders are generated at first runtime - `mappings` and `__files`. We are going to add some new mappings to these folders, so for now, kill the Wiremock service by pressing `Ctrl + C` (in the your CLI terminal window).
+The reason for starting the service first, as because two folders are generated at first runtime - `mappings` and `__files`. We are going to add some new mappings to these folders, so for now, kill the Wiremock service by pressing `Ctrl + C` (in the your CLI terminal window).
 
+You can also specify a different root folder using the `--root-dir` option at runtime, which sets the root directory where your `mappings` and `__files` folders reside. Otherwise  Wiremock defaults to the current directory.
+```
+java -jar wiremock-standalone-3.10.0.jar --port 8080 --root-dir ../another/folder
+```
 
 ## Mapping 1
 
