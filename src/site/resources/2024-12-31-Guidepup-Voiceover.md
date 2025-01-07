@@ -2,7 +2,7 @@
 title: Guidepup (Voiceover)
 intro: |
     Guidepup is a screen reader driver for test automation for NVDA and Voiceover.
-date: 2025-01-05
+date: 2024-12-31
 featured: true
 tags:
     - Accessibility
