@@ -56,7 +56,7 @@ superagent.get('http://localhost:3001/api/v1/todos').then(console.log).catch(con
 ```
 ## The API server
 
-This is code for a very basic API server.
+This is code for a very basic API server, using NodeJS and [Express](https://expressjs.com)
 
 `api.js`
 ```javascript
@@ -138,3 +138,4 @@ node api.js
 ```bash
 node api-test.js
 ```
+
