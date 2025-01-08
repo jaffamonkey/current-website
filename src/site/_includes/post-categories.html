@@ -1,7 +1,7 @@
 {%- if tags %}
     {%- set categories = tags | tagsOnPage %}
 {%- else %}
-    {%- set categories = resource.data.tags | tagsOnPage %}
+    {%- set categories = post.data.tags | tagsOnPage %}
 {% endif %}
 {%- if categories.length >= 1 %}
     {% for category in categories %}
