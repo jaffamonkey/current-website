@@ -10,7 +10,13 @@ summaryImage: apple-touch-icon.png
 summaryImageAlt: jaffamonkey
 ---
 
-> Do I enjoy it? Well, my mind does like puzzles to work out!
+> Do I enjoy my work? Well, my mind does love puzzles to work out - and in software development, puzzles a presented to us, every day!
+
+<picture>
+    <img src="/assets/img/clients3.png" alt="clients" width="800" decoding="async" />
+</picture>
+
+![Clients](https://jaffamonkey.com/assets/img/clients3.png "Clients")
 
 I started out in the tail of of the 1990's, when Waterfall was still common and testing was judged by the weight of arch-lever file reports (only half-joking).  
 
