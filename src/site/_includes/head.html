@@ -15,7 +15,7 @@
         {%- set description = intro | markdown | safe | striptags(true) | escape %}
     {%- else %}
         {%- if category %}
-            {%- set description = "Articles and resources in the " + category + " category." %}
+            {%- set description = "Resources in the " + category + " category." %}
         {%- else %}
             {%- set description = content | striptags(true) | escape | truncate(150) %}
         {%- endif %}
