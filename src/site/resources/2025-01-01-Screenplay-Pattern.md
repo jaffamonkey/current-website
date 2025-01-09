@@ -59,7 +59,7 @@ public static final Target LOGOUT = Target.the("Logout")
 
 `src/main/java/tasks/AccessWebPage.java`
 ```java
-import com.ui.screenplay.pageobject.LoginPage;
+import pageobject.LoginPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Open;
@@ -83,7 +83,7 @@ t.attemptsTo(Open.browserOn().the(loginPage));
 
 `src/main/java/tasks/LoginTo.java`
 ```java
-import com.ui.screenplay.pageobject.LoginPage;
+import pageobject.LoginPage;
 import net.serenitybdd.core.steps.Instrumented;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
@@ -122,9 +122,9 @@ return Instrumented
 }
 ```
 
-`src/main/java/tasks/questions/Dashboard.java`
+`src/main/java//questions/Dashboard.java`
 ```java
-import com.ui.screenplay.pageobject.DashboardPage;
+import pageobject.DashboardPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;
@@ -161,7 +161,7 @@ import org.openqa.selenium.WebDriver;
 @RunWith(SerenityRunner.class)
 public class ScreenPlayTest {
 
-private Actor demoUser = Actor.named("Demo User");
+private Actor demoUser = Actor.named("Tom Smith");
 
 @Managed
 private WebDriver hisBrowser;
