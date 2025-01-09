@@ -8,6 +8,7 @@ tags:
     - Screenreader
     - Keyboard
     - Design
+    - Web
 ---
 
 [Pa11y Dashboard](https://github.com/pa11y/pa11y-dashboard) which is a code monitoring tool, to check web pages for WCAG compliance. It keeps run history, and displays statistics.

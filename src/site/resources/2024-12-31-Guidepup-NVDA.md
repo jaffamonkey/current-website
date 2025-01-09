@@ -6,6 +6,7 @@ date: 2024-12-31
 tags:
     - Accessibility
     - Screenreader
+    - Web
 ---
 
 > [Guidepup](https://www.guidepup.dev/) is a screen reader driver for test automation for NVDA and VoiceOver.

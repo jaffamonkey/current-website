@@ -7,6 +7,8 @@ date: 2025-01-05
 tags:
     - Performance
     - Load
+    - Web
+    - API
 ---
 
 [Artillery](https://www.artillery.io/) is a scalable, flexible and easy-to-use platform that contains everything you need for production-grade load testing.

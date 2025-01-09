@@ -10,6 +10,7 @@ tags:
   - Keyboard
   - Design
   - GithubActions
+  - Web
 ---
 
 > Lighthouse is an open-source, automated tool to help you improve the quality of web pages. Playwright is an open-source automation framework that is used for testing web applications

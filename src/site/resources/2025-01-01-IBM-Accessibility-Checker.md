@@ -9,6 +9,7 @@ tags:
     - Keyboard
     - Design
     - DeveloperTools
+    - Web
 ---
 
 > [IBM Equal Access Accessibility Checker](https://www.ibm.com/able/toolkit/verify/automated) is a browser extension that can be accessed from the Developer toolbar.
