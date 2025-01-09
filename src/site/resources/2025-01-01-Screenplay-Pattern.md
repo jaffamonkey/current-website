@@ -24,12 +24,11 @@ The Screenplay Pattern is a user-centric approach to writing workflow-level auto
 
 ## Example using Serenity
 
-This example uses [Serenity](https://serenity-bdd.github.io/) with Selenium Webdriver. Note that this is pure test framework setup, so the shared files are kept where the app would be, in `src/main/java/`. However, you can also keep all files in `src/test/java`, and add a README in `src/main/java/` with some test framework information.
-
+This example uses [Serenity](https://serenity-bdd.github.io/) with Selenium Webdriver.
 
 #### Create these files in directory structures indicated
 
-`src/main/java/pageobjects/LoginPage.java`
+`src/test/java/pageobjects/LoginPage.java`
 ```java
 import net.serenitybdd.screenplay.targets.Target;
 import net.thucydides.core.pages.PageObject;
@@ -45,7 +44,7 @@ public static final Target LOGIN_BTN = Target.the("Login Button")
 }
 ```
 
-`src/main/java/pageobjects/Dashboard.java`
+`src/test/java/pageobjects/Dashboard.java`
 ```java
 import net.serenitybdd.screenplay.targets.Target;
 import net.thucydides.core.pages.PageObject;
@@ -57,9 +56,9 @@ public static final Target LOGOUT = Target.the("Logout")
 }
 ```
 
-`src/main/java/tasks/AccessWebPage.java`
+`src/test/java/tasks/AccessWebPage.java`
 ```java
-import pageobject.LoginPage;
+import com.ui.screenplay.pageobject.LoginPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Open;
@@ -81,9 +80,9 @@ t.attemptsTo(Open.browserOn().the(loginPage));
 }
 ```
 
-`src/main/java/tasks/LoginTo.java`
+`src/test/java/tasks/LoginTo.java`
 ```java
-import pageobject.LoginPage;
+import com.ui.screenplay.pageobject.LoginPage;
 import net.serenitybdd.core.steps.Instrumented;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
@@ -122,12 +121,13 @@ return Instrumented
 }
 ```
 
-`src/main/java//questions/Dashboard.java`
+`src/test/java/questions/Dashboard.java`
 ```java
-import pageobject.DashboardPage;
+import com.ui.screenplay.pageobject.DashboardPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;
+
 public class Dashboard implements Question<String> {
 
 public static Question<String> displayed() {
@@ -142,10 +142,8 @@ return Text.of(DashboardPage.LOGOUT).answeredBy(actor);
 
 `src/test/java/tests/ScreenPlayTest.java`
 ```java
-package tests;
-
-import questions.Dashboard;
-import tasks.LoginTo;
+import com.ui.screenplay.questions.Dashboard;
+import com.ui.screenplay.tasks.LoginTo;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.serenitybdd.screenplay.Actor;
 import static net.serenitybdd.screenplay.GivenWhenThen.*;
@@ -161,7 +159,7 @@ import org.openqa.selenium.WebDriver;
 @RunWith(SerenityRunner.class)
 public class ScreenPlayTest {
 
-private Actor demoUser = Actor.named("Tom Smith");
+private Actor demoUser = Actor.named("Demo User");
 
 @Managed
 private WebDriver hisBrowser;
@@ -175,7 +173,7 @@ demoUser.can(BrowseTheWeb.with(hisBrowser));
 public void browseTheWebAsDemoUser(){
 demoUser.attemptsTo(Open.url("https://the-internet.herokuapp.com/login"));
 givenThat(demoUser).attemptsTo(LoginTo.withCredentials("tomsmith", "SuperSecretPassword!"));
-then(demoUser).should(seeThat(Dashboard.displayed(), CoreMatchers.equalTo("Secure Area")));
+then(demoUser).should(seeThat(Dashboard.displayed(), CoreMatchers.equalTo("demouser1")));
 }
 
 }
