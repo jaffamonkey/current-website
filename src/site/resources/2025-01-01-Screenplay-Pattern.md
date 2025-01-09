@@ -8,19 +8,17 @@ tags:
     - Web
 ---
 
-> The Screenplay pattern uses the system metaphor of a stage performance, helping you model each test scenario like a little screenplay describing how the actors should go about performing their activities while interacting with the system under test.
-
-Following the Screenplay Pattern helps you capture:
-
-- Actors, who represent people and external systems interacting with the system under test
-- Abilities, that act as thin wrappers around any integration libraries required to interact with the system under test
-- Interactions, which represent the low-level activities an actor can perform using a given interface
-- Tasks, used to model sequences of activities as meaningful steps of a business workflow in your domain
-- Questions, used to retrieve information from the system under test and the test execution environment
+> The screenplay pattern uses the system metaphor of a stage performance, helping you model each test scenario like a little screenplay describing how the actors should go about performing their activities while interacting with the system under test.
 
 <picture>
     <img src="/assets/img/screenplay.png" alt="Screenplay pattern" width="572" loading="lazy" decoding="async" />
 </picture>
+
+- **Actors** initiate Interactions.
+- **Abilities** enable Actors to initiate Interactions.
+- **Interactions** are procedures that exercise the behaviors under test.
+    - **Tasks** execute procedures on the features under test.
+    - **Questions** return state about the features under test.
 
 ## Example using Serenity
 
