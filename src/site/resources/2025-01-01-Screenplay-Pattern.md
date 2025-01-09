@@ -175,7 +175,7 @@ demoUser.can(BrowseTheWeb.with(hisBrowser));
 public void browseTheWebAsDemoUser(){
 demoUser.attemptsTo(Open.url("https://the-internet.herokuapp.com/login"));
 givenThat(demoUser).attemptsTo(LoginTo.withCredentials("tomsmith", "SuperSecretPassword!"));
-then(demoUser).should(seeThat(Dashboard.displayed(), CoreMatchers.equalTo("demouser1")));
+then(demoUser).should(seeThat(Dashboard.displayed(), CoreMatchers.equalTo("Secure Area")));
 }
 
 }
