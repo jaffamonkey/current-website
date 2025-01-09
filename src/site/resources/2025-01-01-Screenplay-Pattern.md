@@ -10,6 +10,8 @@ tags:
 
 > The screenplay pattern uses the system metaphor of a stage performance, helping you model each test scenario like a little screenplay describing how the actors should go about performing their activities while interacting with the system under test.
 
+The Screenplay Pattern is a user-centric approach to writing workflow-level automated acceptance tests. This helps automation testers to write test cases in terms of Business language.
+
 <picture>
     <img src="/assets/img/screenplay.png" alt="Screenplay pattern" width="572" loading="lazy" decoding="async" />
 </picture>
