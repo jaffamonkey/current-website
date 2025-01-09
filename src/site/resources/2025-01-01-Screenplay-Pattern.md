@@ -96,8 +96,12 @@ public class LoginTo implements Task {
 @Step("{0} enter username and password '#username' '#password")
 public <T extends Actor> void performAs(T actor)
 {
-actor.attemptsTo(Enter.theValue(username).into(LoginPage.USERNAME).thenHit(Keys.TAB));
-actor.attemptsTo(Enter.theValue(password).into(LoginPage.PASSWORD).thenHit(Keys.TAB));
+actor.attemptsTo(Enter.theValue(username)
+    .into(LoginPage.USERNAME)
+    .thenHit(Keys.TAB));
+actor.attemptsTo(Enter.theValue(password)
+    .into(LoginPage.PASSWORD)
+    .thenHit(Keys.TAB));
 actor.attemptsTo(Click.on(LoginPage.LOGIN_BTN));
 }
 
