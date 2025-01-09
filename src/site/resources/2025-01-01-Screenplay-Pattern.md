@@ -51,7 +51,7 @@ import net.thucydides.core.pages.PageObject;
 
 public class DashboardPage extends PageObject {
 
-public static final Target SIGNOUT = Target.the("Logout")
+public static final Target LOGOUT = Target.the("Logout")
 .locatedBy(".icon-signout");
 }
 ```
@@ -131,7 +131,7 @@ return new Dashboard();
 }
 
 public String answeredBy(Actor actor) {
-return Text.of(DashboardPage.SIGNOUT).answeredBy(actor);
+return Text.of(DashboardPage.LOGOUT).answeredBy(actor);
 }
 }
 ```
