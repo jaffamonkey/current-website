@@ -177,73 +177,46 @@ then(demoUser).should(seeThat(Dashboard.displayed(), CoreMatchers.equalTo("demou
 
 `build.gradle`
 ```json
-defaultTasks 'clean', 'test', 'aggregate'
+plugins {
+    id "net.serenity-bdd.serenity-gradle-plugin" version "4.1.12"
+    id 'java'
+    id 'eclipse'
+    id 'idea'
+}
+
+defaultTasks 'clean','test','aggregate'
 
 repositories {
     mavenCentral()
-    mavenLocal()
 }
 
-buildscript {
-    repositories {
-        maven {
-            url "https://plugins.gradle.org/m2/"
-        }
-    }
-    dependencies {
-        classpath "net.serenity-bdd:serenity-gradle-plugin:4.1.14"
-    }
-}
-
-
-apply plugin: 'java'
-apply plugin: 'eclipse'
-apply plugin: 'idea'
-apply plugin: "net.serenity-bdd.serenity-gradle-plugin"
-
-sourceCompatibility = 17
-targetCompatibility = 17
+sourceCompatibility = 16
+targetCompatibility = 16
 
 ext {
-    SERENITY_VERSION = '4.1.14'
-    JUNIT_PLATFORM_VERSION = '1.10.2'
-    CUCUMBER_JUNIT_PLATFORM_VERSION = '7.14.0'
-    JUNIT_JUPITER_VERSION = '5.10.2'
-    JUNIT_VINTAGE_VERSION = '5.10.2'
-    LOGBACK_CLASSIC_VERSION = '1.2.10'
-    ASSERTJ_CORE_VERSION = '3.25.3'
+    slf4jVersion = '1.7.30'
+    serenityCoreVersion = '4.1.12'
+    junitVersion = '5.10.2'
+    assertJVersion = '3.24.2'
+    logbackVersion = '1.2.10'
 }
 
 dependencies {
-    implementation "net.serenity-bdd:serenity-core:${SERENITY_VERSION}"
-    implementation "net.serenity-bdd:serenity-junit:${SERENITY_VERSION}"
-    implementation "net.serenity-bdd:serenity-junit5:${SERENITY_VERSION}"
-    implementation "net.serenity-bdd:serenity-screenplay:${SERENITY_VERSION}"
-    implementation "net.serenity-bdd:serenity-screenplay-webdriver:${SERENITY_VERSION}"
-    implementation "net.serenity-bdd:serenity-ensure:${SERENITY_VERSION}"
-    implementation "net.serenity-bdd:serenity-cucumber:${SERENITY_VERSION}"
-    implementation "ch.qos.logback:logback-classic:${LOGBACK_CLASSIC_VERSION}"
-    implementation "org.assertj:assertj-core:${ASSERTJ_CORE_VERSION}"
-    testImplementation "org.junit.platform:junit-platform-launcher:${JUNIT_PLATFORM_VERSION}"
-    testImplementation "io.cucumber:cucumber-junit-platform-engine:${CUCUMBER_JUNIT_PLATFORM_VERSION}"
-    testImplementation "org.junit.platform:junit-platform-suite:${JUNIT_PLATFORM_VERSION}"
-    testImplementation "org.junit.jupiter:junit-jupiter-engine:${JUNIT_JUPITER_VERSION}"
-    testImplementation "org.junit.vintage:junit-vintage-engine:${JUNIT_VINTAGE_VERSION}"
-    testImplementation "net.serenity-bdd:serenity-saucelabs:${SERENITY_VERSION}"
+    testImplementation "net.serenity-bdd:serenity-core:${serenityCoreVersion}",
+                "net.serenity-bdd:serenity-junit5:${serenityCoreVersion}",
+                "net.serenity-bdd:serenity-screenplay:${serenityCoreVersion}",
+                "net.serenity-bdd:serenity-ensure:${serenityCoreVersion}",
+                "net.serenity-bdd:serenity-screenplay-webdriver:${serenityCoreVersion}",
+                "org.junit.jupiter:junit-jupiter-api:${junitVersion}",
+                "org.assertj:assertj-core:${assertJVersion}",
+                "ch.qos.logback:logback-classic:${logbackVersion}"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
 }
 
 test {
     useJUnitPlatform()
+    testLogging.showStandardStreams = true
     systemProperties System.getProperties()
-    maxParallelForks = 2
-}
-
-serenity {
-    // Specify the root package of any JUnit acceptance tests
-    testRoot = "net.serenitybdd.demos.todos"
-
-    // Specify the root directory of any Cucumber feature files
-    requirementsDir = "src/test/resources/features"
 }
 
 gradle.startParameter.continueOnFailure = true
@@ -254,5 +227,5 @@ test.finalizedBy(aggregate)
 #### Run test
 
 ```bash
-mvn clean verify
+gradlew test
 ```
