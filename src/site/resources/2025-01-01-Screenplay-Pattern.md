@@ -18,7 +18,7 @@ The Screenplay Pattern is a user-centric approach to writing workflow-level auto
 
 - **Actors** initiate Interactions.
 - **Abilities** enable Actors to initiate Interactions.
-- **Interactions** are procedures that exercise the behaviors under test.
+- **Interactions** exercise the behaviors under test.
     - **Tasks** execute procedures on the features under test.
     - **Questions** return state about the features under test.
 
@@ -254,5 +254,5 @@ test.finalizedBy(aggregate)
 #### Run test
 
 ```bash
-mvn test
+mvn clean verify
 ```
