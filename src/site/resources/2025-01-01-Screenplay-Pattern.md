@@ -24,11 +24,12 @@ The Screenplay Pattern is a user-centric approach to writing workflow-level auto
 
 ## Example using Serenity
 
-This example uses [Serenity](https://serenity-bdd.github.io/) with Selenium Webdriver.
+This example uses [Serenity](https://serenity-bdd.github.io/) with Selenium Webdriver. Note that this is pure test framework setup, so the shared files are kept where the app would be, in `src/main/java/`. However, you can also keep all files in `src/test/java`, and add a README in `src/main/java/` with some test framework information.
+
 
 #### Create these files in directory structures indicated
 
-`pageobjects/LoginPage.java`
+`src/main/java/pageobjects/LoginPage.java`
 ```java
 import net.serenitybdd.screenplay.targets.Target;
 import net.thucydides.core.pages.PageObject;
@@ -44,7 +45,7 @@ public static final Target LOGIN_BTN = Target.the("Login Button")
 }
 ```
 
-`pageobjects/Dashboard.java`
+`src/main/java/pageobjects/Dashboard.java`
 ```java
 import net.serenitybdd.screenplay.targets.Target;
 import net.thucydides.core.pages.PageObject;
@@ -56,7 +57,7 @@ public static final Target LOGOUT = Target.the("Logout")
 }
 ```
 
-`tasks/AccessWebPage.java`
+`src/main/java/tasks/AccessWebPage.java`
 ```java
 import com.ui.screenplay.pageobject.LoginPage;
 import net.serenitybdd.screenplay.Actor;
@@ -80,7 +81,7 @@ t.attemptsTo(Open.browserOn().the(loginPage));
 }
 ```
 
-`tasks/LoginTo.java`
+`src/main/java/tasks/LoginTo.java`
 ```java
 import com.ui.screenplay.pageobject.LoginPage;
 import net.serenitybdd.core.steps.Instrumented;
@@ -121,13 +122,12 @@ return Instrumented
 }
 ```
 
-`questions/Dashboard.java`
+`src/main/java/tasks/questions/Dashboard.java`
 ```java
 import com.ui.screenplay.pageobject.DashboardPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;
-
 public class Dashboard implements Question<String> {
 
 public static Question<String> displayed() {
@@ -140,10 +140,12 @@ return Text.of(DashboardPage.LOGOUT).answeredBy(actor);
 }
 ```
 
-`tests/ScreenPlayTest.java`
+`src/test/java/tests/ScreenPlayTest.java`
 ```java
-import com.ui.screenplay.questions.Dashboard;
-import com.ui.screenplay.tasks.LoginTo;
+package tests;
+
+import questions.Dashboard;
+import tasks.LoginTo;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.serenitybdd.screenplay.Actor;
 import static net.serenitybdd.screenplay.GivenWhenThen.*;
