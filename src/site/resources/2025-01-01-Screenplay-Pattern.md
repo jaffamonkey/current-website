@@ -1,5 +1,5 @@
 ---
-title: Serenity & Screenplay 
+title: Screenplay pattern 
 intro: |
     The Screenplay Pattern uses the system metaphor of a stage performance, helping you model each test scenario like a little screenplay describing how the actors should go about performing their activities while interacting with the system under test.
 date: 2025-01-01
@@ -8,7 +8,7 @@ tags:
     - Web
 ---
 
-> The Screenplay Pattern uses the system metaphor of a stage performance, helping you model each test scenario like a little screenplay describing how the actors should go about performing their activities while interacting with the system under test.
+> The Screenplay pattern uses the system metaphor of a stage performance, helping you model each test scenario like a little screenplay describing how the actors should go about performing their activities while interacting with the system under test.
 
 Following the Screenplay Pattern helps you capture:
 
@@ -22,7 +22,7 @@ Following the Screenplay Pattern helps you capture:
     <img src="/assets/img/screenplay.png" alt="Screenplay pattern" width="572" loading="lazy" decoding="async" />
 </picture>
 
-## Example
+## Example using Serenity
 
 This example uses [Serenity](https://serenity-bdd.github.io/) with Selenium Webdriver.
 
