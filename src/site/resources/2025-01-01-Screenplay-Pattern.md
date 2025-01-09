@@ -28,7 +28,7 @@ This example uses [Serenity](https://serenity-bdd.github.io/) with Selenium Webd
 
 #### Create these files in directory structures indicated
 
-`pageopbjects/LoginPage.java`
+`pageobjects/LoginPage.java`
 ```java
 import net.serenitybdd.screenplay.targets.Target;
 import net.thucydides.core.pages.PageObject;
@@ -44,7 +44,7 @@ public static final Target LOGIN_BTN = Target.the("Login Button")
 }
 ```
 
-`pageopbjects/Dashboard.java`
+`pageobjects/Dashboard.java`
 ```java
 import net.serenitybdd.screenplay.targets.Target;
 import net.thucydides.core.pages.PageObject;
