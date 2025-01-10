@@ -185,13 +185,11 @@ RUN mkdir -p /var/wiremock/lib/ \
     -o /var/wiremock/lib/wiremock-standalone.jar
 
 # Init WireMock files structure
-RUN mkdir -p /home/wiremock/mappings && \
-	mkdir -p /home/wiremock/__files && \
-   mkdir -p /var/wiremock/extensions
+RUN mkdir -p /var/wiremock/extensions
 
 # Copy our mappings and responses to the Wiremock directories
-COPY mappings /home/wiremock/mappings
-COPY __files /home/wiremock/__files
+ADD mappings /home/wiremock/mappings
+ADD __files /home/wiremock/__files
 
 COPY docker-entrypoint.sh /
 
