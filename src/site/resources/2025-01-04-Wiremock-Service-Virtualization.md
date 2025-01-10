@@ -12,6 +12,8 @@ Service virtualization aims to simulate an entire system, and helps to maintain 
 
 ## Mappings
 
+Mapping files are what Wiremock use to decide what decision to make, when a request is sent to an endpoint. If the json in request matches a mapping, then the response for that mapping is returned.
+
 #### Mapping 1
 
 `mappings/deposit-not-sent.json`
@@ -95,6 +97,8 @@ Service virtualization aims to simulate an entire system, and helps to maintain 
 
 ## Responses
 
+These files contain the data to return, from a mapping response being initiated. 
+
 #### Mapping 1 response file
 
 `__files/deposit-not-sent-response.json`
@@ -128,9 +132,9 @@ Service virtualization aims to simulate an entire system, and helps to maintain 
 
 ## Install Wiremock
 
-#### Dockerfile
-
 For ease, we will use the Docker image.
+
+#### Dockerfile
 
 `Dockerfile`
 ```bash
