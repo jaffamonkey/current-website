@@ -10,8 +10,9 @@ tags:
 
 Service virtualization aims to simulate an entire system, and helps to maintain a continuity to regular test runs. For this example, we will be using [Wiremock](https://wiremock.org/) (standalone version).
 
+## Mappings
 
-## Mapping 1
+#### Mapping 1
 
 `mappings/deposit-not-sent.json`
 ```json
@@ -35,7 +36,7 @@ Service virtualization aims to simulate an entire system, and helps to maintain 
   }
   ```
 
-## Mapping 2
+#### Mapping 2
 
 `mappings/deposit-sent.json`
 ```json
@@ -63,7 +64,7 @@ Service virtualization aims to simulate an entire system, and helps to maintain 
 }
   ```
 
-## Mapping 3
+#### Mapping 3
 
 `mappings/successful-verification.json`
 ```json
@@ -92,6 +93,7 @@ Service virtualization aims to simulate an entire system, and helps to maintain 
  }
 ```
 
+## Responses
 
 ## Mapping 1 response file
 
@@ -126,7 +128,7 @@ Service virtualization aims to simulate an entire system, and helps to maintain 
 
 ## Install Wiremock
 
-### Dockerfile
+#### Dockerfile
 
 For ease, we will use the Docker image.
 
