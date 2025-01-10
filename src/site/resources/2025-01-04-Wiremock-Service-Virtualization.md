@@ -11,22 +11,6 @@ tags:
 Service virtualization aims to simulate an entire system, and helps to maintain a continuity to regular test runs. For this example, we will be using [Wiremock](https://wiremock.org/) (standalone version).
 
 
-## Install Wiremock
-
-```bash
-cd [enter directory you wish to run wiremock from]
-wget https://repo1.maven.org/maven2/org/wiremock/wiremock-standalone/3.10.0/wiremock-standalone-3.10.0.jar
-# You can select port of your choice here
-java -jar wiremock-standalone-3.10.0.jar --port 8080
-```
-
-The reason for starting the service first, as because two folders are generated at first runtime - `mappings` and `__files`. We are going to add some new mappings to these folders, so for now, kill the Wiremock service by pressing `Ctrl + C` (in the your CLI terminal window).
-
-You can also specify a different root folder using the `--root-dir` option at runtime, which sets the root directory where your `mappings` and `__files` folders reside. Otherwise  Wiremock defaults to the current directory.
-```
-java -jar wiremock-standalone-3.10.0.jar --port 8080 --root-dir ../another/folder
-```
-
 ## Mapping 1
 
 `mappings/deposit-not-sent.json`
@@ -140,12 +124,109 @@ java -jar wiremock-standalone-3.10.0.jar --port 8080 --root-dir ../another/folde
 }
 ```
 
+## Install Wiremock
+
+### Dockerfile
+
+For ease, we will use the Docker image.
+
+`Dockerfile`
+```bash
+FROM eclipse-temurin:11.0.24_8-jre
+
+LABEL maintainer="Rodolphe CHAIGNEAU <rodolphe.chaigneau@gmail.com>"
+
+ARG WIREMOCK_VERSION=3.10.0
+ENV WIREMOCK_VERSION=$WIREMOCK_VERSION
+ENV GOSU_VERSION=1.17
+
+WORKDIR /home/wiremock
+
+# grab gosu for easy step-down from root
+RUN set -eux; \
+  # save list of currently installed packages for later so we can clean up
+	savedAptMark="$(apt-mark showmanual)"; \
+	apt-get update; \
+	apt-get install -y --no-install-recommends ca-certificates wget; \
+	if ! command -v gpg; then \
+		apt-get install -y --no-install-recommends gnupg2 dirmngr; \
+	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then \
+  # "This package provides support for HKPS keyservers." (GnuPG 1.x only)
+		apt-get install -y --no-install-recommends gnupg-curl; \
+	fi; \
+	rm -rf /var/lib/apt/lists/*; \
+	\
+	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; \
+	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; \
+	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; \
+	\
+  # verify the signature
+	export GNUPGHOME="$(mktemp -d)"; \
+	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; \
+	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; \
+	command -v gpgconf && gpgconf --kill all || :; \
+	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; \
+	\
+  # clean up fetch dependencies
+	apt-mark auto '.*' > /dev/null; \
+	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; \
+	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; \
+	\
+	chmod +x /usr/local/bin/gosu; \
+  # verify that the binary works
+	gosu --version; \
+	gosu nobody true
+
+# grab wiremock standalone jar
+RUN mkdir -p /var/wiremock/lib/ \
+  && curl https://repo1.maven.org/maven2/org/wiremock/wiremock-standalone/$WIREMOCK_VERSION/wiremock-standalone-$WIREMOCK_VERSION.jar \
+    -o /var/wiremock/lib/wiremock-standalone.jar
+
+# Init WireMock files structure
+RUN mkdir -p /home/wiremock/mappings && \
+	mkdir -p /home/wiremock/__files && \
+   mkdir -p /var/wiremock/extensions
+
+# Copy our mappings and responses to the Wiremock directories
+COPY mappings /home/wiremock/mappings
+COPY __files /home/wiremock/__files
+
+COPY docker-entrypoint.sh /
+
+EXPOSE 8080 8443
+
+HEALTHCHECK --start-period=5s --start-interval=100ms CMD curl -f http://localhost:8080/__admin/health || exit 1
+
+ENTRYPOINT ["/docker-entrypoint.sh"]
+```
+
+`docker-entrypoint.sh`
+```bash
+#!/bin/bash
+
+set -e
+
+# Set `java` command if needed
+if [ "$1" = "" -o "${1:0:1}" = "-" ]; then
+  set -- java $JAVA_OPTS -cp /var/wiremock/lib/*:/var/wiremock/extensions/* wiremock.Run "$@"
+fi
+
+# allow the container to be started with `-e uid=`
+if [ "$uid" != "" ]; then
+  # Change the ownership of /home/wiremock to $uid
+  chown -R $uid:$uid /home/wiremock
+  set -- gosu $uid:$uid "$@"
+fi
+
+exec "$@" $WIREMOCK_OPTIONS
+```
+
 ## Testing
 
 #### Start the Wiremock service
 
 ```
-java -jar wiremock-standalone-3.10.0.jar --port 8080
+docker run -it --rm -p 8080:8080 wiremock/wiremock
 ```
 
 #### Check the account
