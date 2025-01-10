@@ -95,7 +95,7 @@ Service virtualization aims to simulate an entire system, and helps to maintain 
 
 ## Responses
 
-## Mapping 1 response file
+#### Mapping 1 response file
 
 `__files/deposit-not-sent-response.json`
 ```json
@@ -104,7 +104,7 @@ Service virtualization aims to simulate an entire system, and helps to maintain 
 }
 ```
 
-## Mapping 2 response file
+#### Mapping 2 response file
 
 `__files/deposit-sent-response.json`
 ```json
@@ -117,7 +117,7 @@ Service virtualization aims to simulate an entire system, and helps to maintain 
  }
 ```
 
-## Mapping 3 response file
+#### Mapping 3 response file
 
 `__files/successful-verification-response.json`
 ```json
