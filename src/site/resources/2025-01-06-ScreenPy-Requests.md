@@ -39,9 +39,7 @@ We are going to use the API test url https://httpsbin.org.
 
 `urls.py`
 ```python
-"""
-URLs to be tested via API requests.
-"""
+""" URLs to be tested via API requests."""
 
 BASE_URL = "https://httpbin.org"
 
@@ -96,9 +94,7 @@ def test_bearer_auth(Perry: Actor) -> None:
 
 `test_cookies.py`
 ```python
-"""
-API test example that tests cookies.
-"""
+"""API test example that tests cookies."""
 
 from screenpy import Actor, then, when
 from screenpy.actions import SeeAllOf
@@ -129,9 +125,7 @@ def test_set_cookies(Perry: Actor) -> None:
 
 `test_methods.py`
 ```python
-"""
-API test examples that use all the HTTP methods.
-"""
+"""API test examples that use all the HTTP methods."""
 
 import pytest
 
