@@ -124,7 +124,7 @@ async function delay(ms: number) {
 
 ## Voiceover setup file
 
-`voiceover-test.ts`
+`tests/voiceover-test.ts`
 ```typescript
 import { macOSActivate, voiceOver } from "@guidepup/guidepup";
 import { test } from "@playwright/test";
@@ -188,10 +188,27 @@ const config: PlaywrightTestConfig = {
 export default config;
 ```
 
+## Typescript configuration
+
+`tsconfig.json`
+```json
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "target": "esnext",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "declaration": true,
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
+}
+```
+
 ## Run test
 
 ```bash
-./node_modules/.bin/playwright test --config playwright.config.ts voiceover-playwright-test.ts
+./node_modules/.bin/playwright test --config playwright.config.ts tests/voiceover-playwright-test.ts
 ```
 
 ## Github Actions Example

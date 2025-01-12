@@ -124,7 +124,7 @@ async function delay(ms: number) {
 
 ## NVDA setup file
 
-`nvda-test.ts`
+`tests/nvda-test.ts`
 ```typescript
 import { nvda, WindowsKeyCodes, WindowsModifiers } from "../../lib";
 import { test } from "@playwright/test";
@@ -234,10 +234,26 @@ const config: PlaywrightTestConfig = {
 export default config;
 ```
 
+## Typescript configuration
+
+`tsconfig.json`
+```json
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "target": "esnext",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "declaration": true
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
+}
+
 ## Run test
 
 ```bash
-./node_modules/.bin/playwright test --config playwright.config.ts nvda-playwright-test.ts
+./node_modules/.bin/playwright test --config playwright.config.ts tests/nvda-playwright-test.ts
 ```
 
 ## Github Actions Example
