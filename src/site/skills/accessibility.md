@@ -3,6 +3,7 @@ title: Accessibility
 intro: |
     Make a start by getting an Accessibility audit on your web or mobile app project, and get advice on how to introduce accessibility checks from design to production.
 order: 2
+featured: true
 ---
 <!-- <picture>
     <img src="/assets/img/accessibility.png" alt="EvaluAgent product pattern library intro page, showing a folder system containing the patterns and documenting things such as pattern status labels" width="800" loading="lazy" decoding="async" />
