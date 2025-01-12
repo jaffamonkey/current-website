@@ -6,6 +6,8 @@ date: 2025-01-04
 tags:
     - API
     - ServiceVirtualization
+    - Wiremock
+    - Docker
 ---
 
 Service virtualization aims to simulate an entire system, and helps to maintain a continuity to regular test runs. For this example, we will be using [Wiremock](https://wiremock.org/) (standalone version).

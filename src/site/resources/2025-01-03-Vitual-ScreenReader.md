@@ -7,6 +7,8 @@ tags:
     - Accessibility
     - Screenreader
     - Web
+    - Guidepup
+    - Jest
 ---
 
 > Virtual Screen Reader is a screen reader simulator for unit tests.

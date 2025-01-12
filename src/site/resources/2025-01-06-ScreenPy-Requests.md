@@ -7,6 +7,7 @@ tags:
     - API
     - Screenplay
     - Pytest
+    - ScreenPy
 ---
 
 [ScreenPy](https://screenpy-docs.readthedocs.io/en/latest) provides tools for writing automated test suites which follow the Screenplay Pattern. It encourages user-focused tests which are easy to read, understand, and maintain.

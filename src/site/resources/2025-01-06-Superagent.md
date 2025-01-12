@@ -1,10 +1,11 @@
 ---
-title: Superagent
+title: Superagent API testing
 intro: |
     Superagent is a small progressive client-side HTTP request library, and Node.js module with the same API, supporting many high-level HTTP client features.
 date: 2025-01-06
 tags:
     - API
+    - Superagent
 ---
 
 [Superagent](https://www.npmjs.com/package/superagent) is a small progressive client-side HTTP request library, and Node.js module with the same API, supporting many high-level HTTP client features.
