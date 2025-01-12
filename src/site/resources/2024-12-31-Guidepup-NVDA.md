@@ -249,6 +249,7 @@ export default config;
   "include": ["**/*.ts"],
   "exclude": ["node_modules"]
 }
+```
 
 ## Run test
 

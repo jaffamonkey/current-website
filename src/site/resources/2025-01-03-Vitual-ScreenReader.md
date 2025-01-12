@@ -133,24 +133,13 @@ module.exports = {
 ```json
 {
   "compilerOptions": {
-    "strict": true,
-    "target": "ESNext",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "allowJs": true,
-    "jsx": "react",
-    "noErrorTruncation": true,
-    "declaration": true,
-    "emitDeclarationOnly": true,
-    "outDir": "lib",
-    "forceConsistentCasingInFileNames": true,
     "experimentalDecorators": true,
-    "baseUrl": ".",
-    "rootDir": "./src"
+    "target": "esnext",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "declaration": true,
   },
-  "include": ["**/*"],
+  "include": ["**/*.ts"],
   "exclude": ["node_modules"]
 }
 ```
@@ -165,7 +154,7 @@ jest.setTimeout(10000);
 ## Run the script
 
 ```bash
-jest test.ts
+jest tests/test.ts
 ```
 
 ## Example output
