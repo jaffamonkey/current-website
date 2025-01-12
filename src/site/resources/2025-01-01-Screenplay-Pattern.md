@@ -1,7 +1,7 @@
 ---
 title: Serenity & Screenplay 
 intro: |
-    The Screenplay Pattern uses the system metaphor of a stage performance, helping you model each test scenario like a little screenplay describing how the actors should go about performing their activities while interacting with the system under test.
+    The Screenplay Pattern uses the system metaphor of a stage performance, helping you model each test scenario like a little screenplay.
 date: 2025-01-01
 featured: true
 tags:
