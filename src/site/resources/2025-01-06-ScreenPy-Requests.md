@@ -20,7 +20,7 @@ _Note: If you want to use allure reports, ensure allure is installed on your OS 
 #### Install file
 
 `requirements.txt`
-```bash
+```text
 screenpy[requests,allure]>=4.2.0
 pytest
 ```
