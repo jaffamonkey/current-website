@@ -3,6 +3,7 @@ title: Lighthouse & Playwright
 intro: |
   Lighthouse is an open-source, automated tool to help you improve the quality of web pages. Playwright is an open-source automation framework that is used for testing web applications
 date: 2025-01-05
+featured: true
 tags:
   - Accessibility
   - Screenreader
