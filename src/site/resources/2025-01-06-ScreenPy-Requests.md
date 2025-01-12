@@ -11,7 +11,9 @@ tags:
 
 [ScreenPy](https://screenpy-docs.readthedocs.io/en/latest) provides tools for writing automated test suites which follow the Screenplay Pattern. It encourages user-focused tests which are easy to read, understand, and maintain.
 
-In this example, we are going to use ScreenPy with PyTest (which is a lean test framework) to test REST API endpoints.
+In this example, we are going to use ScreenPy with PyTest (which is a lean test framework) to test REST API endpoints. 
+
+_Note: If you want to use allure reports, ensure allure is installed on your OS (for macos, it's `brew install allure`)._
 
 ## Installation
 
@@ -179,3 +181,8 @@ python -m pytest features/ --alluredir allure_report/
 allure serve allure_report
 ```
 
+## Allure report
+
+<picture>
+    <img src="/assets/img/allure.png" alt="Allure report for Pytest API test run" width="800" decoding="async" />
+</picture>
