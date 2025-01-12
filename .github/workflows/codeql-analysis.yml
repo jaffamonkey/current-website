@@ -69,3 +69,11 @@ jobs:
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
       continue-on-error: true
+    - name: Output reports
+      uses: actions/upload-artifact@v4
+      if: always()
+      continue-on-error: true
+      with:
+        name: artifacts
+        path: |
+          ./**/*
