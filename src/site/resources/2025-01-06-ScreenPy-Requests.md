@@ -38,7 +38,7 @@ pip install -r requirements.txt
 
 #### Urls file
 
-We are going to use the API test url https://httpsbin.org.
+We are going to use the API test url https://httpsbin.org, for this test framework.
 
 `urls.py`
 ```python
