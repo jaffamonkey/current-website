@@ -3,6 +3,7 @@ title: Service Virtualization
 intro: |
     Service virtualization aims to simulate an entire system, and helps to maintain a continuity to regular test runs.
 date: 2025-01-04
+featured: true
 tags:
     - API
     - ServiceVirtualization
