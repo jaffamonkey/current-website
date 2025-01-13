@@ -115,5 +115,5 @@ jobs:
         with:
           name: artifacts
           path: |
-            ./**/*
+            ./reports/*
 ```
