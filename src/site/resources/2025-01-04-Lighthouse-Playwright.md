@@ -20,7 +20,7 @@ tags:
 ## Install
 
 ```bash
-npm install --save-dev playwright playwright-lighthouse
+yarn add -D playwright-lighthouse playwright lighthouse
 # playwright can install supported browsers.
 npx playwright install
 ```
@@ -56,9 +56,17 @@ test.describe("audit", () => {
         "best-practices": 100,
         seo: 100
       },
-      port: 9222
+      port: 9222,
+      reports: {
+        formats: {
+          json: true, //defaults to false
+          html: true, //defaults to false
+          csv: true, //defaults to false
+        },
+        name: `logged-in-lighthouse-report.html`, //defaults to `lighthouse-${new Date().getTime()}`
+        directory: `./reports`, //defaults to `${process.cwd()}/lighthouse`
+      },
     });
-
     await browser.close();
   })
 })
@@ -70,31 +78,42 @@ test.describe("audit", () => {
 npx playwright test lighthouse-playwright.spec.js
 ```
 
+## Output report
+
+A html report is generated: `reports/logged-in-lighthouse-report.html`
+
+<picture>
+    <img src="/assets/img/lighthouse-report.png" alt="Lighthouse report" width="800" decoding="async" />
+</picture>
+
 ## Example GitHub Actions setup
 
 ```yaml
- analyze:
-  # Runs on successful playwright
-  needs: [build, test]
-  name: lighthouse-playwright-test
-  # Running on ubuntu-latest, nothing special
-  runs-on: ubuntu-latest
-  steps:
-   # As usual, we simply checkout the project
-   - name: Checkout
-     uses: actions/checkout@v4
-   # Install the latest version of node
-   - name: Set up Node.js
-     uses: actions/setup-node@v4
-     with:
-      node-version: "20"
-   # Install Playwright browsers
-   - name: Install Playwright and Lighthouse
-     run: npm install --save-dev playwright playwright-lighthouse
-   # Install Playwright browsers
-   - name: Install Playwright Browsers
-     run: npx playwright install --with-deps
-   # Run Lighthouse Playwright tests
-   - name: Run test
-     run: npx playwright test lighthouse-playwright.spec.ts
+name: Lighthouse Test
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+      - run: npm install --save-dev playwright playwright-lighthouse
+      - run: npx playwright install --with-deps chromium
+      - run: npx playwright test lighthouse-playwright.spec.ts
+      - name: Output reports
+        uses: actions/upload-artifact@v4
+        if: always()
+        continue-on-error: true
+        with:
+          name: artifacts
+          path: |
+            ./**/*
 ```
