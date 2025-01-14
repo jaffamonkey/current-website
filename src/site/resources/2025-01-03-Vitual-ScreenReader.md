@@ -89,8 +89,9 @@ describe("click", () => {
 
 `jest.config.ts`
 ```javascript
-// eslint-disable-next-line no-undef
-module.exports = {
+import { Config } from '@jest/types';
+
+const config: Config.InitialOptions = {
   preset: "ts-jest",
   resolver: "ts-jest-resolver",
   testEnvironment: "jsdom",
@@ -110,6 +111,8 @@ module.exports = {
     "^.+\\.tsx?$": ["ts-jest", { tsconfig: "./tsconfig.json" }],
   },
 };
+
+export default config;
 ```
 
 ## Typescript config file

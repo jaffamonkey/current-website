@@ -1782,7 +1782,7 @@ Gets rid of extra whitespace in blog post listing category links
 
 ## Adds
 - support for Safari dark mode
-- adds skip to main content link for screenreaders
+- adds skip to main content link for screen readers
 - adds `visually-hidden` utility class
 - utility classes stylesheet
 
