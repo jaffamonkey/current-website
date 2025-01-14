@@ -18,10 +18,7 @@ This package automates a [Virtual Screen Reader](https://www.guidepup.dev/docs/v
 ## Install
 
 ```
-npm install --save-dev @guidepup/virtual-screen-reader
-npm install --save-dev jest
-npm install --save-dev jest-environment-jsdom
-npm install --save-dev got-scraping
+npm install --save-dev @guidepup/virtual-screen-reader jest jest-environment-jsdom got-scraping typescript
 ```
 
 ## Test script 1
@@ -88,9 +85,9 @@ describe("click", () => {
 })
 ```
 
-## Jest config files
+## Jest config file
 
-`jest.config.cjs`
+`jest.config.ts`
 ```javascript
 // eslint-disable-next-line no-undef
 module.exports = {
@@ -99,8 +96,8 @@ module.exports = {
   testEnvironment: "jsdom",
   testTimeout: 120000,
   roots: ["tests"],
-  collectCoverageFrom: ["src/**/*.ts", "src/**/*.tsx"],
-  coveragePathIgnorePatterns: ["/node_modules/", "/tests/"],
+  collectCoverageFrom: ["**/*.ts"],
+  coveragePathIgnorePatterns: ["/node_modules/"],
   coverageThreshold: {
     global: {
       branches: 100,
@@ -113,18 +110,6 @@ module.exports = {
     "^.+\\.tsx?$": ["ts-jest", { tsconfig: "./tsconfig.test.json" }],
   },
 };
-```
-
-`tsconfig.test.json`
-```json
-{
-    "extends": "./tsconfig.json",
-    "compilerOptions": {
-      "rootDir": "./tests",
-      "target": "esnext",
-    },
-    "include": ["tests/**/*.ts"],
-  }
 ```
 
 ## Typescript config file

@@ -20,14 +20,14 @@ tags:
 ## Install
 
 ```bash
-yarn add -D playwright-lighthouse playwright lighthouse
+yarn add -D playwright-lighthouse playwright lighthouse typescript
 # playwright can install supported browsers.
 npx playwright install
 ```
 
 ## The script
 
-`lighthouse-playwright.spec.ts`
+`tests/lighthouse-playwright.spec.ts`
 ```javascript
 import { playAudit } from "playwright-lighthouse";
 import { test, chromium } from "@playwright/test";
@@ -72,6 +72,23 @@ test.describe("audit", () => {
 })
 ```
 
+## Typescript configuration
+
+`tsconfig.json`
+```json
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "target": "esnext",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "declaration": true
+  },
+  "include": ["tests/*.ts"],
+  "exclude": ["node_modules"]
+}
+```
+
 ## Run script
 
 ```bash
@@ -105,7 +122,7 @@ jobs:
         with:
           node-version: '18'
           cache: 'npm'
-      - run: npm install --save-dev playwright playwright-lighthouse
+      - run: npm install --save-dev playwright playwright-lighthouse typescript
       - run: npx playwright install --with-deps chromium
       - run: npx playwright test lighthouse-playwright.spec.ts
       - name: Output reports
