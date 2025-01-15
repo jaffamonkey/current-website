@@ -28,7 +28,7 @@ npx playwright install
 ## The script
 
 `tests/lighthouse-playwright.spec.ts`
-```javascript
+```typescript
 import { playAudit } from "playwright-lighthouse";
 import { test, chromium } from "@playwright/test";
 
@@ -92,7 +92,7 @@ test.describe("audit", () => {
 ## Run script
 
 ```bash
-npx playwright test lighthouse-playwright.spec.js
+npx playwright test lighthouse-playwright.spec.ts
 ```
 
 ## Output report
