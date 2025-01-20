@@ -3,6 +3,7 @@ title: Videos
 intro: |
     Videos
 date: 2025-01-01
+permalink: videos.html
 tags:
     - Video
 ---
