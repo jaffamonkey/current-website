@@ -1,13 +1,10 @@
 ---
 title: Videos
-heading: Videos
 intro: |
-    I have been working in area of testing and quality for over 25 years, and helped over 65 companies achieve their quality goals.
-layout: default
-permalink: about.html
-cta: true
-summaryImage: apple-touch-icon.png
-summaryImageAlt: jaffamonkey
+    Videos
+date: 2025-01-01
+tags:
+    - Video
 ---
 
 {% set youtubeVideoTitle = "Alone in the Dark 1992 complete playthrough" %}
