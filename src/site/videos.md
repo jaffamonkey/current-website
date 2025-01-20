@@ -2,6 +2,7 @@
 title: Videos
 intro: |
     Videos
+layout: default
 date: 2025-01-01
 permalink: videos.html
 tags:
