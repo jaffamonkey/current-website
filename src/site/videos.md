@@ -5,8 +5,9 @@ intro: |
 layout: default
 date: 2025-01-01
 permalink: videos.html
-tags:
-    - Video
+cta: true
+summaryImage: apple-touch-icon.png
+summaryImageAlt: jaffamonkey
 ---
 
 {% set youtubeVideoTitle = "Alone in the Dark 1992 complete playthrough" %}
