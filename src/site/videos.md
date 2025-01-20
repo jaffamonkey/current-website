@@ -1,5 +1,6 @@
 ---
 title: Videos
+heading: Videos
 intro: |
     Videos
 layout: default
