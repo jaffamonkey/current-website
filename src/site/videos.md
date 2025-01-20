@@ -76,8 +76,8 @@ tags:
 {% set youtubeVideoTitle = "Seeburg Rhythm Prince Analog Drum Machine" %}
 {% set youtubeVideoID = "Ipdi3THbBVU" %}
 
-{% set youtubeVideoTitle = "Sky 1975 Episode 1 - Burning Bright 07-04-1975" %}
-{% set youtubeVideoID = "Ugkxg4SUzHriignTFpjclpFOSP63giS2TSvb" %}
+<!-- {% set youtubeVideoTitle = "Sky 1975 Episode 1 - Burning Bright 07-04-1975" %}
+{% set youtubeVideoID = "Ugkxg4SUzHriignTFpjclpFOSP63giS2TSvb" %} -->
 
 {% set youtubeVideoTitle = "Interuniversal Historical Records Division" %}
 {% set youtubeVideoID = "BmHZD04nyiM" %}
