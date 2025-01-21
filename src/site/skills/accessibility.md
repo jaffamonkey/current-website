@@ -23,6 +23,15 @@ W3C specified the Web Content Accessibility Guidelines (WCAG 2.2) success criter
 
 > Business Advantages: A broader audience and enhanced user satisfaction can translate into increased engagement and customer loyalty.
 
+## Core areas checked
+
+While it may seem as if the WCAG is focused on web, it's actually focused on content.  The same WCAG rules apply to both web and mobile apps.
+
+- Listen to most of the web/mobile app using a screen reader
+- Verify zoom in up to 200% without web/mobile app text spilling off the screen
+- Navigate the web/mobileapp using keyboard
+- UI color contrasts and clickable element sizings
+
 ## What you will get
 - A full accessibility review and test of web or mobile app against the WCAG 2.2 AA standard.
 - Delivery of a full, prioritized accessibility report of web and/or mobile app
