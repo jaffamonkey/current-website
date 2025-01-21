@@ -27,9 +27,9 @@ W3C specified the Web Content Accessibility Guidelines (WCAG 2.2) success criter
 
 While it may seem as if the WCAG is focused on web, it's actually focused on content in a more general.  The same WCAG rules apply to both web and mobile apps (as well as document formats, such as PDF).
 
-- Listen to most of the web/mobile app using a screen reader
-- Verify zoom in up to 200% without web/mobile app text spilling off the screen
-- Navigate the web/mobileapp using keyboard
+- Listen to most of the web/mobile app using a screen reader.
+- Check impact on design and layout, with 200% text resize.
+- Navigate the web/mobile app using keyboard
 - UI color contrasts and clickable element sizings
 
 _Particular attention will be paid to embedded media._
