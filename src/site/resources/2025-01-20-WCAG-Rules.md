@@ -8,7 +8,7 @@ tags:
     - WCAG
 ---
 
-> [WCAG 2.1](https://www.w3.org/TR/WCAG21/) and [WCAG 2.2](https://www.w3.org/TR/WCAG22/) rules, explained by example.
+>` [WCAG 2.1](https://www.w3.org/TR/WCAG21/) and [WCAG 2.2](https://www.w3.org/TR/WCAG22/) rules, explained by example.
 
 # WCAG 2.1
 
@@ -57,13 +57,13 @@ Use media players that support audio descriptions.
 ## 1.3.1 Info and Relationships
 **Level**: A
 Content, structure and relationships can be programmatically determined.
-Emphasis – Use <em> and <strong> instead of using Italics and Bold texts to highlight important texts; use <blockquote> to mark quotations
+Emphasis – Use `<em>` and `<strong>` instead of using Italics and Bold texts to highlight important texts; use `<blockquote>` to mark quotations
 Headings – Provide hierarchically logical heading markup for the contents.
 Table – Provide HTML table markup and provide column headers for simple tables and column headers and row headers for complex tables.
 Table – When using nested tables, consider the possibility of breaking the content into logical individual tables instead of nested tables.
 Forms – Provide programmatic association of visible labels or appropriate accessible names to all the form elements.
 Lists – Markup the contents that logically fall into a list as ordered or unordered list. Do not put huge text blocks which are otherwise paragraphs as lists.
-Grouping – Provide grouping and group level labels to mark a group of form elements like radio buttons or checkboxes; use <fieldset> and legend to achieve grouping and group Association for native form elements; use ARIA to achieve the same where custom form controls are used; use native semantic markup frequently and ARIA sparingly.
+Grouping – Provide grouping and group level labels to mark a group of form elements like radio buttons or checkboxes; use `<fieldset>` and legend to achieve grouping and group Association for native form elements; use ARIA to achieve the same where custom form controls are used; use native semantic markup frequently and ARIA sparingly.
 
 ## 1.3.2 Meaningful Sequence
 **Level**: A
@@ -241,7 +241,7 @@ Make sure the title describes the purpose of the page.
 ## 2.4.3 Focus Order
 **Level**: A
 Components receive focus in a logical sequence.
-**Level**: Avoid using tabindex values that are >1 to manage focus order as they may supersede logical tab order.
+**Level**: Avoid using tabindex values that are >`1 to manage focus order as they may supersede logical tab order.
 **Level**: Align the focus order with the reading order as much as possible in order to maintain a logical and intuitive navigation of the content.
 Too much deviation would put a lot of users with disabilities into confusion.
 
