@@ -13,7 +13,7 @@ featured: true
 
 ## Accessibility Standards
 
-W3C specified the Web Content Accessibility Guidelines (WCAG 2.2) success criteria for Accessibility compliance. Following these guidelines will provide greater accessibility to a wider range of people with disabilities, across a range of devices (desktops, laptops, tablets and smartphones).
+W3C specified the Web Content Accessibility Guidelines (WCAG 2.1 and the subsequent WCAG 2.2 addendum) success criteria for Accessibility compliance. Following these guidelines will provide greater accessibility to a wider range of people with disabilities, across a range of devices (desktops, laptops, tablets and smartphones).
 
 [Check here to see a breakdown of WCAG 2.1 and 2.2](https://jaffamonkey.com/resources/wcag)
 
