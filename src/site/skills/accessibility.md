@@ -12,7 +12,10 @@ featured: true
 > The purpose of an Accessibility Audit is to establish how well a website or mobile app performs in terms of access and ease of use by a wide range of potential users, including people with disabilities such the visually impaired.
 
 ## Accessibility Standards
+
 W3C specified the Web Content Accessibility Guidelines (WCAG 2.2) success criteria for Accessibility compliance. Following these guidelines will provide greater accessibility to a wider range of people with disabilities, across a range of devices (desktops, laptops, tablets and smartphones).
+
+[Check here to see a breakdown of WCAG 2.1 and 2.2](https://jaffamonkey.com/resources/wcag)
 
 ## Key Benefits
 > Inclusivity: Integrating accessibility ensures that digital products are usable by a wider audience, including individuals with disabilities.
