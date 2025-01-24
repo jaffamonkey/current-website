@@ -2,13 +2,13 @@
 title: WCAG
 intro: |
     WCAG 2.1 and WCAG 2.2 rules, explained by example.
-- date: 2025-01-20
+date: 2025-01-20
 tags:
     - Accessibility
     - WCAG
 ---
 
->` [WCAG 2.1](https://www.w3.org/TR/WCAG21/) and [WCAG 2.2](https://www.w3.org/TR/WCAG22/) rules, explained by example.
+>`[WCAG 2.1](https://www.w3.org/TR/WCAG21/) and [WCAG 2.2](https://www.w3.org/TR/WCAG22/) rules, explained by example.
 
 # WCAG 2.1
 
