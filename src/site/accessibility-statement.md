@@ -20,4 +20,4 @@ While I'm not aware of any current issues with this website, there's a chance th
 - There's a *lot* of content
 - I continually tweak and iterate the design and code
 
-If you have any trouble accessing any part of this website please [raise a GitHub Issue](https://github.com/jaffamonkey/tempertemper.net/issues) or [get in touch directly](/contact) and I'll fix it as a matter of priority.
+If you have any trouble accessing any part of this website please [raise a GitHub Issue](https://github.com/jaffamonkey/current-website/issues) or [get in touch directly](/contact) and I'll fix it as a matter of priority.
