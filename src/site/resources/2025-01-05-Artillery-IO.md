@@ -25,7 +25,7 @@ This example shows how you can modify how Artillery selects a scenario for a vir
 `artillery-test.yml`
 ```yaml
 config:
-  target: "https://jaffamonkey.com"
+  target: "https://jaffamonkey.sbs"
   phases:
     - duration: 10min
       arrivalRate: 25

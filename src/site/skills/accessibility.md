@@ -15,7 +15,7 @@ featured: true
 
 W3C specified the Web Content Accessibility Guidelines (WCAG 2.1 and the subsequent WCAG 2.2 addendum) success criteria for Accessibility compliance. Following these guidelines will provide greater accessibility to a wider range of people with disabilities, across a range of devices (desktops, laptops, tablets and smartphones).
 
-[Check here to see a breakdown of WCAG 2.1 and 2.2](https://jaffamonkey.com/resources/wcag)
+[Check here to see a breakdown of WCAG 2.1 and 2.2](https://jaffamonkey.sbs/resources/wcag)
 
 ## Key Benefits
 > Inclusivity: Integrating accessibility ensures that digital products are usable by a wider audience, including individuals with disabilities.
@@ -43,7 +43,7 @@ _Particular attention will be paid to embedded media._
 - Feedback on UX as well as UI issues.
 - An accessibility statement advising on status of WCAG 2.2 AA compliance.
 - Automated accessibility test framework(s) for your design and development cycles. 
-  _(some of the tools used are described on page about [checks done on this website](https://jaffamonkey.com/accessibility-checks))_
+  _(some of the tools used are described on page about [checks done on this website](https://jaffamonkey.sbs/accessibility-checks))_
 - Optional extra is devising a strategy, to aimed at integrating Accessibility checks as part of design and development cycles.
 
 ## What happens afterwards

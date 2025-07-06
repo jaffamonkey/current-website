@@ -34,14 +34,14 @@ jobs:
       - name: Run Lighthouse on multiple URLs and interpolate env variables.
         uses: treosh/lighthouse-ci-action@v11
         env:
-          URL_DOMAIN: 'jaffamonkey.com'
+          URL_DOMAIN: 'jaffamonkey.sbs'
         with:
           urls: |
-            https://jaffamonkey.com
-            https://jaffamonkey.com/contact
-            https://jaffamonkey.com/skills/accessibility
-            https://jaffamonkey.com/skills/testing
-            https://jaffamonkey.com/site-checks
+            https://jaffamonkey.sbs
+            https://jaffamonkey.sbs/contact
+            https://jaffamonkey.sbs/skills/accessibility
+            https://jaffamonkey.sbs/skills/testing
+            https://jaffamonkey.sbs/site-checks
           uploadArtifacts: true # save results as an action artifacts
           temporaryPublicStorage: true # upload lighthouse report to the temporary storage
 

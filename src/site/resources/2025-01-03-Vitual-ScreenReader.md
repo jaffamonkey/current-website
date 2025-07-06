@@ -33,7 +33,7 @@ const { gotScraping } = require("got-scraping");
 describe("Screen Reader Tests", () => {
     test("should traverse the page announcing the expected roles and content", async () => {
 
-      let url = "http://www.jaffamonkey.com"
+      let url = "http://www.jaffamonkey.sbs"
 
       // Retrieves HTML from the url provided
       const response = await gotScraping.get(url);
